@@ -1,0 +1,68 @@
+  body {
+    font-family: Helvetica, Arial, sans-serif; line-height: 1.75em; -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #FFF;
+    padding: 20px;
+  }
+
+  pre, code {
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 1.5em;
+    color: #333;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; overflow: scroll; }
+  code { padding: 2px 4px; background-color: #F7F7F9; border: 1px solid #E1E1E8; color: #D14; }
+
+  .other { height: 300px; color: #FFF; }
+
+  .other div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*background: #000;*/
+    background: rgba(255,255,255,0.5);
+  }
+
+  .other div p { padding: 10px; }
+
+  #other {
+/*    background-color: rgba(1,1,200,0.1);*/
+}
+
+  #header {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -20px;
+    background-color: #FFF;
+    padding: 20px;
+  }
+
+
+  #site-text {
+    position: absolute;
+    width: 40%;
+  }
+
+  .images {
+    text-align: right;
+    float: right;
+    }
+
+  .images img {
+    width: 45%;
+    height: 45%;
+  }
+
+  #site-about{
+    clear: both;
+    padding: 1.625em 0 0;
+    overflow: auto;
+  }
