@@ -1,13 +1,4 @@
-  body {
-    font-family: Helvetica, Arial, sans-serif; line-height: 1.75em; -webkit-font-smoothing: antialiased;
-  }
 
-  .container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #FFF;
-    padding: 20px;
-  }
 
   pre, code {
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -20,6 +11,19 @@
 
   pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; overflow: scroll; }
   code { padding: 2px 4px; background-color: #F7F7F9; border: 1px solid #E1E1E8; color: #D14; }
+
+  body {
+    font-family: Helvetica, Arial, sans-serif; line-height: 1.75em; -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 3%;
+    overflow: auto;
+  }
 
   .other { height: 300px; color: #FFF; }
 
@@ -46,24 +50,20 @@
     padding: 20px;
   }
 
+  #site-about{
+    clear: both;
+    padding: 1.625em 0 0;
+    overflow: auto;
+  }
 
   #site-text {
     position: absolute;
     width: 40%;
   }
 
-  .images {
-    text-align: right;
-    float: right;
-    }
-
   .images img {
+    float: right;
     width: 45%;
     height: 45%;
   }
 
-  #site-about{
-    clear: both;
-    padding: 1.625em 0 0;
-    overflow: auto;
-  }
