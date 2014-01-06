@@ -1,69 +1,73 @@
 
 
-  pre, code {
-    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-    font-size: 1.5em;
-    color: #333;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
+pre, code {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 1.5em;
+  color: #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
 
-  pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; overflow: scroll; }
-  code { padding: 2px 4px; background-color: #F7F7F9; border: 1px solid #E1E1E8; color: #D14; }
+pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; overflow: scroll; }
+code { padding: 2px 4px; background-color: #F7F7F9; border: 1px solid #E1E1E8; color: #D14; }
 
-  body {
-    font-family: Helvetica, Arial, sans-serif; line-height: 1.75em; -webkit-font-smoothing: antialiased;
-  }
+body {
+  font-family: Helvetica, Arial, sans-serif; line-height: 1.75em; -webkit-font-smoothing: antialiased;
+  background-color: #F6F6F6;
+}
 
-  .container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #FFF;
-    padding: 20px;
-    border-radius: 3%;
-    overflow: auto;
-  }
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px black solid;
+  overflow: auto;
+}
 
-  .other { height: 300px; color: #FFF; }
+.other { height: 300px; color: #FFF; }
 
-  .other div {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /*background: #000;*/
-    background: rgba(255,255,255,0.5);
-  }
+.other div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*background: #000;*/
+  background: rgba(255,255,255,0.5);
+}
 
-  .other div p { padding: 10px; }
+.other div p { padding: 10px; }
 
-  #other {
+#other {
 /*    background-color: rgba(1,1,200,0.1);*/
 }
 
-  #header {
-    width: 110%;
-    margin: 0 auto;
-    margin-left: -10px;
-    margin-top: -20px;
-    background-color: #FFF;
-    padding: 20px;
-  }
+#header {
+  width: 110%;
+  margin: 0 auto;
+  margin-left: -10px;
+  margin-top: -20px;
+  background-color: #FFF;
+  padding: 20px;
+  border-bottom: 2px black solid;
+}
 
-  #site-about{
-    clear: both;
-    padding: 1.625em 0 0;
-    overflow: auto;
-  }
+#site-about{
+  clear: both;
+  padding: 1.625em 0 0;
+  overflow: auto;
+}
 
-  #site-text {
-    position: absolute;
-    width: 40%;
-  }
+#site-text {
+  position: absolute;
+  width: 40%;
+}
 
-  .images img {
-    float: right;
-    width: 45%;
-    height: 45%;
-  }
+.images img {
+  float: right;
+  width: 45%;
+  height: 45%;
+  padding: 2%;
+}
 
