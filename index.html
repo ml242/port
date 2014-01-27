@@ -1,10 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="jquery.backstretch.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
@@ -22,6 +30,14 @@
       <h2>Developer</h2>
       <p>Matt decided to tackle tutorials online through Code Year but, craving more information, he pursued more in depth resources. It was that drive to improve that led him to enroll in General Assembly's Web Development Intensive. The following are some of the projects he completed at school.</p>
     </div>
+  </div>
+
+  <div class="container">
+      <div class="images"><a href="http://dossier-app.herokuapp.com"><img src="images/da.png"></a></div>
+        <h2>Dossier</h2>
+        <p>Craving a new challenge, Matt sat down with friend and GA classmate <a href="https://github.com/fijimunkii">Harrison Powers</a> to cook up Dossier. The idea is to study up on faces before you meet, or even after, to avoid any embarassment if you forget. Everyone loves having their name remembered, so we used authorization with Facebook and LinkedIn to create this useful little app. While you're there, you can also toggle your RSVP's and play some memory games.
+</p>
+
   </div>
 
   <div class="container">
@@ -65,5 +81,9 @@
   // To attach Backstrech as the body's background
   // $.backstretch("Untitled-1.png");
   </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
