@@ -37,14 +37,21 @@ body a:visited {
   margin-top: -25%;
 }
 
+.links {
+  float: right;
+  margin-top: -60px;
+}
+
 .container {
   width: 80%;
   margin: 20px auto;
   background-color: #FFF;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 3px;
   border: 1px black solid;
   overflow: auto;
+
+  }
 }
 
 .container h2 {
@@ -70,7 +77,7 @@ body a:visited {
 }
 
 #header {
-  width: 110%;
+  width: 100%;
   margin: 0 auto;
   margin-left: -10px;
   margin-top: -20px;
@@ -88,10 +95,6 @@ body a:visited {
   color: black;
   font-variant: small-caps;
   font-size: 1.5em;
-}
-
-.links {
-  margin-top: -1%;
 }
 
 #site-about{
