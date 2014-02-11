@@ -34,7 +34,7 @@ body a:visited {
   border: white solid 12px;
   text-align: center;
   z-index: 1;
-  margin-top: -25%;
+  margin-top: -22%;
 }
 
 .links {
@@ -50,8 +50,10 @@ body a:visited {
   border-radius: 3px;
   border: 1px black solid;
   overflow: auto;
+}
 
-  }
+.container p {
+  margin: 20px 0 0 10px;
 }
 
 .container h2 {
