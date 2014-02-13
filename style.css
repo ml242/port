@@ -42,6 +42,11 @@ body a:visited {
   margin-top: -60px;
 }
 
+@media screen and (max-width: 650px) {
+  .links {
+    margin-top: -25px;
+  }
+}
 .container {
   width: 80%;
   margin: 20px auto;
@@ -97,6 +102,13 @@ body a:visited {
   color: black;
   font-variant: small-caps;
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 650px) {
+  #header {
+    height: 220px;
+  }
+
 }
 
 #site-about{
