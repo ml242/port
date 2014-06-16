@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#submit{
+  margin-left: 5px;
+  border: red solid 1px;
+  padding: 5px;
+}
+
+#easy-game{
+  padding: 10px;
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#int-game{
+  padding: 10px;
+  width: 2000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#hard-game{
+  padding: 10px;
+  width: 2000px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cardback {
+  background-image: url('../images/b1fv.png');
+  width: 225px;
+  height: 310px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.card {
+  width: 225px;
+}
+
+.intcard {
+  width: 225px; 
+}
