@@ -67,25 +67,21 @@ $(document).ready(function(){
 
   };
 
-  function showCard(){
-    debugger;
-    if ($('.clicked').length == 2 ){
-      $('.card').click(false);
-    } else if ($(this).hasClass('winners')==true){
-      $('.card').click(false);
-    } else if (choice1 == '') {
-      choice1 = this.src;
-      $(this).addClass('clicked');
-      $(this).closest('.card').css('opacity', 1);  
-      // $(this).find('img').addClass('clicked');
-      // $(this).children().css('opacity', 1)
-    } else {
-      choice2 = this.src;
-      $(this).addClass('clicked');
-      $(this).closest('.card').css('opacity', 1);  
-      checkCard();
-    }
-  };
+function showCard(){
+
+  if ($('.clicked').length == 2 || $(this).hasClass('winners')==true ){
+    $('.card').click(false);
+  } else if (choice1 == '') {
+    choice1 = this.src;
+    $(this).addClass('clicked');
+    $(this).closest('.card').css('opacity', 1);  
+  } else {
+    choice2 = this.src;
+    $(this).addClass('clicked');
+    $(this).closest('.card').css('opacity', 1);  
+    checkCard();
+  }
+};
 
 $('.card').on('click', showCard);
 
