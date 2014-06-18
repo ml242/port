@@ -9,8 +9,6 @@ $(document).ready(function(){
 
   var choice1 = '';
   var choice2 = '';
-  var tag1;
-  var tag2;
 
   var game;
 
@@ -95,10 +93,9 @@ function startGame(){
         startInt();
       } else if (game=="Difficult"){
         startHard();
-      } else {
-        startIns();
       }
-      showScore();
+
+    showScore();
 
     };
 
@@ -123,13 +120,13 @@ function startEasy(){
   // console.log('easy');
   $('#selector').hide();
   $('#easy-game').show();
-  var eGame = $('.card');
+  var eGame = $('.easycard');
   for(i=0; i < eGame.length; i++){
     eGame[i].src = easyGame[i];
   }
     setTimeout(function() {
     eGame.css('opacity', 0.0)
-  }, 2500);
+  }, 2000);
 
 }
 
@@ -170,7 +167,7 @@ function startInt(){
   {
     eGame.css('opacity', 0.0)
     //do something special
-  }, 2500);
+  }, 2000);
 }
 
 function startHard(){
@@ -226,7 +223,7 @@ function startHard(){
   {
     eGame.css('opacity', 0.0)
     //do something special
-  }, 2500);}
+  }, 2000);}
 
 function startIns(){
   // console.log('insane');
