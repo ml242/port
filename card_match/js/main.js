@@ -67,7 +67,10 @@ $(document).ready(function(){
   };
 
   function showCard(){
-    if (choice1 == '') {
+    
+    if ($('.clicked').length == 2){
+      $('.card').click(false);  
+    } else if (choice1 == '') {
       choice1 = this.src;
       $(this).addClass('clicked');
       $(this).closest('.card').css('opacity', 1);  
