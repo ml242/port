@@ -10,7 +10,15 @@
 </head>
 <body>
   <div id="selector">
-  <h1>Crazy card matching game!</h1>
+  <h1>Card Matching!</h1>
+  <h2>
+  <ul>
+    <li>1. Select the dificulty level you would like.</li>
+    <li>2. Press the submit button to begin.</li>
+    <li>3. After seeing the cards, try to match them.</li>
+    <li>4. See if you can beat your best score!</li>
+  </ul>
+</h2>
   
   <form>
     <select name="dificulty" id="start-game">
@@ -24,8 +32,9 @@
 
   <div id="scoreboard">
     <h1>
-      Points: <span id="points">0</span><br>
-      Seconds: <span class="timer">-2</span><br>
+      <div id="left-zone">Points: <span id="points">0</span></div>
+
+       <div id="right-zone"></div>Seconds: <span class="timer">-2</span></div>
     </h1>
   </div>
 

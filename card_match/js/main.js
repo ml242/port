@@ -108,7 +108,9 @@ function startGame(){
 
 function startEasy(){
 
- game = 'easy';
+$('#easy-game').css('width', '960px');
+
+game = 'easy';
 
   var easyGame = [
   'images/hj.png',
@@ -140,6 +142,10 @@ function startInt(){
   $('#selector').hide();
   
   game = 'int';
+
+  $('#int-game').css('width', '1100px');
+  $('.cardback').css('width', '14%');
+
 
   var intGame = [
     'images/hj.png',
@@ -178,6 +184,9 @@ function startInt(){
 
 function startHard(){
   $('#selector').hide();
+
+  $('#hard-game').css('width', '1100px');
+  $('.cardback').css('width', '12%');
 
   game ='hard';
   

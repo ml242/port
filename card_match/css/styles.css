@@ -3,6 +3,26 @@ body {
   margin: 0 auto;
 }
 
+ul li {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+#scoreboard{
+  display: inline;
+  width: 960px
+}
+
+#left-zone{
+  float: left;
+  margin-left: 26%;
+}
+
+#right-zone{
+  float: right;
+  margin-right: 25%;
+}
+
 #submit{
   margin-left: 5px;
   border: red solid 1px;
@@ -11,50 +31,38 @@ body {
 
 #easy-game{
   padding: 10px;
-  width: 960px;
   text-align: center;
   margin: 0 auto;
+  margin-top: -15px;
 }
 
 #int-game{
   padding: 10px;
-  width: 2000px;
   text-align: center;
   margin: 0 auto;
+  margin-top: -15px;
 }
 
 #hard-game{
   padding: 10px;
-  width: 2000px;
   text-align: center;
   margin: 0 auto;
+  margin-top: -15px;
 }
 
 .cardback {
   background-image: url('../images/b1fv.png');
-  width: 225px;
-  height: 310px;
+  width: 20%;
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
 }
 
 .card {
-  width: 225px;
+  width: 100%;
 }
 
-.easycard {
-  width: 225px;
+.winners {
+  width: 100%;
 }
 
-.intcard {
-  width: 225px; 
-}
-
-/*.clicked {
-  opacity: 1,
-}*/
-
-#showscore {
-  height: 100px;
-}
