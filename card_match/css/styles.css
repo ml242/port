@@ -1,6 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Graduate|VT323);
+
+
 body {
   text-align: center;
   margin: 0 auto;
+  font-family: 'Graduate', cursive;
+}
+
+#points {
+  font-family: 'VT323', ;
+}
+
+.timer {
+  font-family: 'VT323', ;
 }
 
 ul li {
