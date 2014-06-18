@@ -44,7 +44,8 @@ $(document).ready(function(){
 
       if (choice1 == choice2){
         $('.clicked').addClass('winners');
-        $('.winners').removeClass('clicked');
+        $('.winners').removeClass('clicked');        
+        $('.winners').removeClass('card');
         choice1 = '';
         choice2 = '';
         points = parseInt($('#points').text());
@@ -67,13 +68,17 @@ $(document).ready(function(){
   };
 
   function showCard(){
-    
-    if ($('.clicked').length == 2){
-      $('.card').click(false);  
+    debugger;
+    if ($('.clicked').length == 2 ){
+      $('.card').click(false);
+    } else if ($(this).hasClass('winners')==true){
+      $('.card').click(false);
     } else if (choice1 == '') {
       choice1 = this.src;
       $(this).addClass('clicked');
       $(this).closest('.card').css('opacity', 1);  
+      // $(this).find('img').addClass('clicked');
+      // $(this).children().css('opacity', 1)
     } else {
       choice2 = this.src;
       $(this).addClass('clicked');
