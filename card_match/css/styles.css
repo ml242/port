@@ -47,9 +47,9 @@ body {
   width: 225px; 
 }
 
-.clicked {
+/*.clicked {
   opacity: 1,
-}
+}*/
 
 #showscore {
   height: 100px;

@@ -50,18 +50,20 @@ $(document).ready(function(){
         points = parseInt($('#points').text());
         points += 10;
         $('#points').text(points);
+        checkWin();
       } else {
         $('.clicked').closest('.card').css('opacity', 0);
-        $('clicked').removeClass();
+        $('.card').removeClass('clicked');
         choice1 = '';
         choice2 = '';
         points = parseInt($('#points').text());
         points -= 5;
         $('#points').text(points);
       }
+
     }, 500);
      
-    checkWin();
+
   };
 
   function showCard(){
