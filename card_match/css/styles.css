@@ -46,3 +46,11 @@ body {
 .intcard {
   width: 225px; 
 }
+
+.clicked {
+  opacity: 1,
+}
+
+#showscore {
+  height: 100px;
+}
