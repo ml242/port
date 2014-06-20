@@ -15,11 +15,22 @@ ul li {
 #winner h1 {
   margin-top: -1px;
   border: 1.5px black solid;
+  padding-bottom: 15px;
   text-align: center;
 }
 
 #choice{
   margin-top: 10px;
+}
+
+#reset {
+  padding: 1px;
+  border: 2px solid blue; 
+  margin-bottom: 10px; 
+}
+
+#reset:hover{
+  background-color: blue;
 }
 
 #easy{
