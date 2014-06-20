@@ -9,26 +9,34 @@
   <script type="text/javascript"src="js/main.js"></script>
 </head>
 <body>
+  
+  <div id="winner">
+    
+    <h1>Amazing Job! You won... You have a memory like a steel trap!<br>
+    Play Again?</h1>
+
+  </div>
+
+
   <div id="selector">
   <h1>Card Matching!</h1>
   <h2>
-  <ul>
-    <li>1. Select the dificulty level you would like.</li>
-    <li>2. Press the submit button to begin.</li>
-    <li>3. After seeing the cards, try to match them.</li>
-    <li>4. See if you can beat your best score!</li>
-  </ul>
-</h2>
+    <ul>
+      <li>1. Select the dificulty level you would like.</li>
+      <li>2. Press the submit button to begin.</li>
+      <li>3. After seeing the cards, try to match them.</li>
+      <li>4. See if you can beat your best score!</li>
+    </ul>
+  </h2>
+  </div>
   
-  <form>
-    <select name="dificulty" id="start-game">
-      <option value="easy">Easy</option>
-      <option value="intermediate">Intermediate</option>
-      <option value="difficult">Difficult</option>
-    <select>
-    <span id="submit">Submit</span>
-  </form>
-</div>
+  <div id="choice">
+    
+      <span id="easy">Play Easy</span>
+      <span id="intermediate">Play Intermediate</span>
+      <span id="difficult">Lose Difficult</span>
+
+  </div>
 
   <div id="scoreboard">
     <h1>
@@ -37,6 +45,8 @@
        <div id="right-zone"></div>Seconds: <span class="timer">-2</span></div>
     </h1>
   </div>
+
+
 
   <div id="easy-game">
     <div class="cardback"><img class="easycard card" src=""></img></div>
@@ -102,6 +112,7 @@
     <div class="cardback"><img class="hardcard card" src=""></img></div>
     <div class="cardback"><img class="hardcard card" src=""></img></div>
   </div>
+
 
 </body>
 </html>

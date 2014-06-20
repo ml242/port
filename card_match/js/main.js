@@ -4,35 +4,53 @@ $(document).ready(function(){
   $('#easy-game').hide();
   $('#int-game').hide();
   $('#hard-game').hide();
+  $('#winner').hide();
 
-  $('#submit').on('click', startGame);
+  $('#easy').click(startEasy);
+  $('#intermediate').click(startInt);
+  $('#difficult').click(startHard);
+  // $('#submit').on('click', startGame);
 
   var choice1 = '';
   var choice2 = '';
 
   var game;
 
+  function win(){
+      // console.log('winner');
+      $('#winner').fadeIn( "slow" );
+      $('#choice').fadeIn(" slow" );
+  };
+
   function checkWin(){
      
     if ( game == 'easy' && $('.winners').length >= 7) {
-      alert('YOU WIN');
+      
       $(".timer").addClass('freeze');
       $('.freeze').removeClass('timer');
       $(".card").addClass('winners');
       $('.winners').removeClass('clicked');
-      location.reload();
+      debugger;      
+      win()
+      // location.reload();
     } else if ( game == 'int' && $('.winners').length >= 15) {
       alert('YOU WIN');
       $(".timer").addClass('freeze');
       $('.freeze').removeClass('timer');
       $(".card").addClass('winners');
       $('.winners').removeClass('clicked');
+
+      win()
+
       location.reload();
     } else if ( game == 'int' && $('.winners').length >= 33) {
       $(".timer").addClass('freeze');
       $('.freeze').removeClass('timer');
       $(".card").addClass('winners');
       $('.winners').removeClass('clicked');
+
+      win()
+
       location.reload();
     }
   
@@ -89,28 +107,26 @@ $('.card').on('click', showCard);
 
 
 
+// function startGame(){
+//   var game = $( "#start-game option:selected" ).text();
+//       // console.log(game);
+//       if(game == "Easy"){
+//         startEasy();
+//       } else if(game == "Intermediate") {
+//         startInt();
+//       } else if (game=="Difficult"){
+//         startHard();
+//       }
 
-function startGame(){
-  var game = $( "#start-game option:selected" ).text();
-      // console.log(game);
-      if(game == "Easy"){
-        startEasy();
-      } else if(game == "Intermediate") {
-        startInt();
-      } else if (game=="Difficult"){
-        startHard();
-      }
+//     showScore();
 
-    showScore();
-
-    };
+//     };
 
 
 function startEasy(){
-
 $('#easy-game').css('width', '960px');
 
-game = 'easy';
+  game = 'easy';
 
   var easyGame = [
   'images/hj.png',
@@ -127,7 +143,11 @@ game = 'easy';
 
   // console.log('easy');
   $('#selector').hide();
+  $('#choice').hide();
+  showScore();
+
   $('#easy-game').show();
+  
   var eGame = $('.easycard');
   for(i=0; i < eGame.length; i++){
     eGame[i].src = easyGame[i];
@@ -140,6 +160,9 @@ game = 'easy';
 
 function startInt(){
   $('#selector').hide();
+  $('#choice').hide();
+  showScore();
+
   
   game = 'int';
 
@@ -184,6 +207,10 @@ function startInt(){
 
 function startHard(){
   $('#selector').hide();
+  $('#choice').hide();
+  showScore();
+
+
 
   $('#hard-game').css('width', '1100px');
   $('.cardback').css('width', '12%');
@@ -251,8 +278,6 @@ function startIns(){
   function showScore(){
     $('#scoreboard').show();
 
-
-
     function startClock(){
       //use the jquery setInterval method to update the time every 1sec
       setInterval(function(){ 
@@ -263,8 +288,6 @@ function startIns(){
       }, 1000);
       
   }
-
-
 
 
   $('.timer').text(startClock());
