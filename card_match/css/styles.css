@@ -5,12 +5,16 @@ body {
   text-align: center;
   margin: 0 auto;
   font-family: 'Graduate', cursive;
+  background: url(../images/felt.jpg);
+  background-size: 100%; 
 }
 
 ul li {
   margin: 0 auto;
   list-style-type: none;
 }
+
+h1 { cursor: default;}
 
 #winner h1 {
   margin-top: -1px;
@@ -23,10 +27,13 @@ ul li {
   margin-top: 10px;
 }
 
+#choice > span { cursor: pointer; }
+
 #reset {
   padding: 1px;
   border: 2px solid blue; 
   margin-bottom: 10px; 
+  cursor: pointer;
 }
 
 #reset:hover{
@@ -117,6 +124,7 @@ ul li {
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
+  cursor: pointer;
 }
 
 .card {

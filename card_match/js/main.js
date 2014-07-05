@@ -1,3 +1,6 @@
+// make the cards show for a longer amount of time for each level 3,5,10
+// fix the set interval
+
 $(document).ready(function(){
   console.log('ready to kick ass');
   $('#scoreboard').hide();
@@ -166,12 +169,12 @@ $('#easy-game').css('width', '960px');
 
   $('#easy-game').show();
   
-  var eGame = $('.easycard');
-  for(i=0; i < eGame.length; i++){
-    eGame[i].src = easyGame[i];
-  }
-    setTimeout(function() {
-    eGame.css('opacity', 0.0)
+  $('.easycard').each(function(i) {
+    $(this).prop('src', easyGame[i]);
+  });
+
+  setTimeout(function() {
+    $('.easycard').css('opacity', 0.0)
   }, 2000);
 
 }
@@ -302,24 +305,36 @@ function startIns(){
 
 
 
+  var clockTime;
 
   function showScore(){
     $('#scoreboard').show();
 
     function startClock(){
+      if (clockTime) clearInterval(clockTime);
       //use the jquery setInterval method to update the time every 1sec
-      setInterval(function(){ 
+      clockTime = setInterval(function(){ 
+          // time = parseInt($('.timer').text('-2'));
           time = parseInt($('.timer').text());
           time += 1;
           $('.timer').text(time);
 
       }, 1000);
-      
-  }
+    }
+
+    $('.timer').text(startClock());
+  };
 
 
-  $('.timer').text(startClock());
-};
+  $('body').on('dragstart', 'img', function(e) {
+    var crt = this.cloneNode(true);
+    $(crt).prop('url', 'image/mugatu.gif');
+    crt.style.position = "absolute"; crt.style.top = "0px"; crt.style.right = "0px";
+    document.body.appendChild(crt);
+    e.dataTransfer.setDragImage(crt, 0, 0);
+  }, false);
+
 
 
 });
+
