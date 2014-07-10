@@ -14,7 +14,7 @@ $(document).ready(function(){
   $('#difficult').click(startHard);
   // $('#submit').on('click', startGame);
 
-  $('#reset').click(playAgain)
+  $('#reset').click(playAgain);
 
   var choice1 = '';
   var choice2 = '';
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
       win()
 
-    } else if ( game == 'int' && $('.winners').length >= 33) {
+    } else if ( game == 'hard' && $('.winners').length >= 33) {
       
       $(".timer").addClass('freeze');
       $('.freeze').removeClass('timer');
@@ -328,7 +328,7 @@ function startIns(){
 
   $('body').on('dragstart', 'img', function(e) {
     var crt = this.cloneNode(true);
-    $(crt).prop('url', 'image/mugatu.gif');
+    $(crt).prop('url', '../images/mugatu.gif');
     crt.style.position = "absolute"; crt.style.top = "0px"; crt.style.right = "0px";
     document.body.appendChild(crt);
     e.dataTransfer.setDragImage(crt, 0, 0);
