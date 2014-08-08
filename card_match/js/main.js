@@ -33,38 +33,21 @@ $(document).ready(function(){
 
   function win(){
       // console.log('winner');
-      $('#winner').fadeIn( "slow" );
+      $('#winner').fadeIn( "slow" );      
+      $(".timer").addClass('freeze');
+      $('.freeze').removeClass('timer');
+      $(".card").addClass('winners');
+      $('.winners').removeClass('clicked');
   };
 
   function checkWin(){
      
-    if ( game == 'easy' && $('.winners').length >= 7) {
-      
-      $(".timer").addClass('freeze');
-      $('.freeze').removeClass('timer');
-      $(".card").addClass('winners');
-      $('.winners').removeClass('clicked');
-             
-      win()
-      // location.reload();
-    } else if ( game == 'int' && $('.winners').length >= 15) {
-
-      $(".timer").addClass('freeze');
-      $('.freeze').removeClass('timer');
-      $(".card").addClass('winners');
-      $('.winners').removeClass('clicked');
-
-      win()
-
-    } else if ( game == 'hard' && $('.winners').length >= 33) {
-      
-      $(".timer").addClass('freeze');
-      $('.freeze').removeClass('timer');
-      $(".card").addClass('winners');
-      $('.winners').removeClass('clicked');
-
-      win()
-
+    if (game == 'easy' && $('.winners').length >= 7) {         
+      win();
+    } else if (game == 'int' && $('.winners').length >= 15) {
+      win();
+    } else if (game == 'hard' && $('.winners').length >= 33) {
+      win();
     }
   
   };
@@ -116,26 +99,6 @@ function showCard(){
 
 $('.card').on('click', showCard);
 
-
-
-
-
-// function startGame(){
-//   var game = $( "#start-game option:selected" ).text();
-//       // console.log(game);
-//       if(game == "Easy"){
-//         startEasy();
-//       } else if(game == "Intermediate") {
-//         startInt();
-//       } else if (game=="Difficult"){
-//         startHard();
-//       }
-
-//     showScore();
-
-//     };
-
-
 function startEasy(){
 $('#easy-game').css('width', '960px');
 
@@ -154,7 +117,6 @@ $('#easy-game').css('width', '960px');
 
   easyGame = _.shuffle(easyGame) 
 
-  // console.log('easy');
   $('#selector').hide();
   $('#choice').hide();
 
@@ -163,8 +125,6 @@ $('#easy-game').css('width', '960px');
   $(".winners").addClass('card').removeClass('winners');
 
   showScore();
-
-
 
 
   $('#easy-game').show();
@@ -292,15 +252,11 @@ function startHard(){
     // $(eGame[i]).css('background-image', 'url(' + easyGame[i] + ')');
     eGame[i].src = hardGame[i];
   }
-  setTimeout(function() 
-  {
+  setTimeout(function(){
     eGame.css('opacity', 0.0)
-    //do something special
-  }, 2000);}
+  }, 2000);
+};
 
-function startIns(){
-  // console.log('insane');
-}
 
 
 
