@@ -45,6 +45,8 @@ body {
 @media screen and (max-width: 650px) {
   .links {
     margin-top: -25px;
+    float: none;
+    text-align: center;
   }
   #portrait {
     margin: 0 auto;
@@ -52,7 +54,7 @@ body {
     width: 100%;
   }
   #portrait img {
-    margin-top: -75px;
+    margin-top: -95px;
     margin-bottom: -75px;
   }
   #header h1 {
