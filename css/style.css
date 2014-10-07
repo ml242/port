@@ -46,6 +46,18 @@ body {
   .links {
     margin-top: -25px;
   }
+  #portrait {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  #portrait img {
+    margin-top: -75px;
+    margin-bottom: -75px;
+  }
+  #header h1 {
+    text-align: center;
+  }
 }
 .container {
   width: 80%;
