@@ -22,6 +22,7 @@ body {
 
 .modal-body {
   width: 875px !important;
+  margin: 0 auto;
 }
 
 #portrait {
