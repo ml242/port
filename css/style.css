@@ -20,6 +20,10 @@ body {
   color: black;
 }*/
 
+.modal-body {
+  width: 875px;
+}
+
 #portrait {
   width: 25%;
   margin: 0 auto;
