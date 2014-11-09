@@ -47,25 +47,6 @@ body {
   margin-top: -60px;
 }
 
-@media screen and (max-width: 650px) {
-  .links {
-    margin-top: -25px;
-    float: none;
-    text-align: center;
-  }
-  #portrait {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-  }
-  #portrait img {
-    margin-top: -95px;
-    margin-bottom: -75px;
-  }
-  #header h1 {
-    text-align: center;
-  }
-}
 .container {
   width: 80%;
   margin: 20px auto;
@@ -123,13 +104,6 @@ body {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 650px) {
-  #header {
-    height: 220px;
-  }
-
-}
-
 #site-about{
   clear: both;
   padding: 1.625em 0 0;
@@ -139,13 +113,6 @@ body {
 #site-text {
   position: absolute;
   width: 40%;
-}
-
-.images img {
-  float: right;
-  width: 45%;
-  height: 45%;
-  padding: 2%;
 }
 
 .fin {
@@ -160,4 +127,46 @@ body {
 
 .tag-end{
   text-align: center;
+}
+
+@media screen and (min-width: 651px){ 
+  .images img {
+    float: right;
+    width: 45%;
+    height: 45%;
+    padding: 2%;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .container { 
+    width: 100%;
+  }
+  .links {
+    margin-top: -25px;
+    float: none;
+    text-align: center;
+  }
+  #portrait {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+  #portrait img {
+    margin-top: -95px;
+    margin-bottom: -75px;
+  }
+  #header h1 {
+    text-align: center;
+  }
+  .site-preview {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+  }
+  #header {
+    height: 220px;
+  }
 }
