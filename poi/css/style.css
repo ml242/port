@@ -86,28 +86,35 @@ a i {
     transition: opacity 0.5s;
 }
 
-#side-menu {
+#side-menu, .shop-menu {
     height: 100vh;
 }
+
+
 
 #side-menu ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.nav-item {
+.nav-item, .shop-item {
     font-family: Futura;
     font-weight: 700;
     padding: 2.5rem 0 1.5rem 0rem;
 }
 
-.nav-item a {
+.nav-item a, .shop-item a {
     color: #373a3c;
 }
 
 .nav-item h4:first-child {
     display: inline-block;
     float: left;
+}
+
+.nav-item h4 a, .shop-item h4 a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .press-item, .services-item {
@@ -144,9 +151,9 @@ a i {
     text-decoration: none;
 }
 
-h4 .nav-link {
-    float: left;
-}
+/*h4 .nav-link {*/
+    /*float: left;*/
+/*}*/
 
 .right-sub {
     position: absolute;
