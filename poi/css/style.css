@@ -1,3 +1,8 @@
+#logo {
+    text-decoration: none;
+    color: inherit
+}
+
 @font-face
 {
     font-family: Futura;
@@ -86,7 +91,7 @@ a i {
     transition: opacity 0.5s;
 }
 
-#side-menu, .shop-menu {
+#side-menu, .shop-menu, #locations-menu {
     height: 100vh;
 }
 
@@ -97,19 +102,23 @@ a i {
     padding-left: 0;
 }
 
-.nav-item, .shop-item {
+.nav-item, .shop-item, .services-item {
     font-family: Futura;
     font-weight: 700;
     padding: 2.5rem 0 1.5rem 0rem;
 }
 
-.nav-item a, .shop-item a {
+.services-item {
+    margin: 0 1rem;
+
+}
+
+.nav-item a, .shop-item a, .services-item a {
     color: #373a3c;
 }
 
 .nav-item h4:first-child {
     display: inline-block;
-    float: left;
 }
 
 .nav-item h4 a, .shop-item h4 a {
@@ -117,12 +126,19 @@ a i {
     text-decoration: none;
 }
 
-.press-item, .services-item {
-    font-family: Futura;
-    font-weight: 700;
-    padding: 1.5rem 0 .5rem 0rem;
+.shop-item {
+    margin: 0 1rem;
 }
 
+.press-item {
+    margin: 0 1rem 0 1rem;
+    font-family: Futura;
+    font-weight: 700;
+    padding: 1.5rem 0 1.5rem 0rem;
+}
+.press-item h6 {
+    margin-bottom: 0rem;
+}
 .press-item a, .services-item a {
     color: #373a3c;
 }
@@ -140,6 +156,11 @@ a i {
     display: inline-block;
 }
 
+.mcaret {
+    float: right;
+    padding-left: 3rem;
+}
+
 .caret {
     float: right;
     padding-left: 3rem;
@@ -155,23 +176,23 @@ a i {
     /*float: left;*/
 /*}*/
 
-.right-sub {
-    position: absolute;
-    left: 100vw;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    margin: 1rem 0rem 0rem 0rem;
-    padding: 1rem 0;
-}
+/*.right-sub {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*background-color: white;*/
+    /*margin: 1rem 0rem 0rem 0rem;*/
+    /*padding: 1rem 0;*/
+/*}*/
 
 .location-tab {
     text-align: left;
+    list-style-type: none;
+    -webkit-padding-start: 0px;
 }
 
 .border {
-    margin: 0 1rem;
     border-top: 1px solid black;
 }
 
@@ -179,4 +200,8 @@ a[href^="tel:"]:before {
     content: "\260E";
     display: inline-block;
     margin-right: 0.5em;
+}
+
+.vh {
+    height: 100vh;
 }
