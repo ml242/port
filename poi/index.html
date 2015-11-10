@@ -13,36 +13,40 @@
 </head>
 
 <body>
-<div class="abs-hero">
+
+<div id="header"
+        style="top: 0">
+    <div class="abs-hero">
     <div class="jumbotron">
 
         <h1 class="text-center"><a href="#" id="logo">PERSONS OF INTEREST</a></h1>
         <h5 class="text-center subtitle">BARBERSHOP</h5>
 
-        <div class="text-right sub-menu">
+        <div class="text-right sub-menu hidden-md-up">
             <a href="#" id="collapseController"><i class="fa fa-bars fa-2x"></i></a> &nbsp;
             <a href="http://instagram.com/personsofinterestbarbershop/"><i class="fa fa-camera-retro fa-2x"></i></a>
         </div>
 
         <div class="row">
             <div class="col-xs-12">
+                <div class="hidden" id="side-menu">
+                    <div class="row">
+                        <ul>
+                            <li class="nav-item sub-menu col-xs-12 col-md-4">
+                                <h4>LOCATIONS</h4>
+                                <span id="locations" class="mcaret "><h4><a>&nbsp;></a></h4></span>
+                            </li>
+                            <li class="nav-item sub-menu col-xs-12 col-md-4">
+                                <h4>SERVICES</h4>
+                                <span id="services" class="mcaret "><h4><a>&nbsp;></a></h4></span>
+                            </li>
+                            <li class="nav-item sub-menu col-xs-12 col-md-4">
+                                <h4>PRESS</h4>
+                                <span id="press" class="mcaret "><h4><a>&nbsp;></a></h4></span>
 
-                <div class="hidden" id="side-menu" style="padding-top:4rem">
-                    <ul>
-                        <li class="nav-item sub-menu">
-                            <h4>LOCATIONS</h4>
-                            <span id="locations" class="mcaret "><h4><a>&nbsp;></a></h4></span>
-                        </li>
-                        <li class="nav-item sub-menu">
-                            <h4>SERVICES</h4>
-                            <span id="services" class="mcaret "><h4><a>&nbsp;></a></h4></span>
-                        </li>
-                        <li class="nav-item sub-menu">
-                            <h4>PRESS</h4>
-                            <span id="press" class="mcaret "><h4><a>&nbsp;></a></h4></span>
-
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="hidden" id="locations-menu" style="padding-top: 4rem;">
@@ -252,12 +256,68 @@
         </div>
     </div>
 </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row borders">
+        <ul class="nav nav-pills hidden-sm-down col-md-12">
+            <div class="row">
+                <li class="poi-nav-item col-md-4">
+                    <a href="#" class="nav-link text-uppercase">Locations<span style="display: inline-block; float: right; padding-right: 1.5rem">&nbsp;></span></a>
+                </li>
+                <li class="poi-nav-item col-md-4 dropdown">
+                    <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services<span style="display: inline-block; float: right; padding-right: 1.5rem">&nbsp;></span></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="poi-nav-item col-md-4">
+                    <a href="#" class="nav-link text-uppercase">Press<span style="display: inline-block; float: right; padding-right: 1.5rem">&nbsp;></span></a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row hidden-sm-down" style="padding: .25rem 2rem;">
+        <div class="background-tablet">
+
+        </div>
+    </div>
+</div>
+
+<div id="footer"
+    style="
+    position: absolute;
+    bottom: 0;
+    width: 100%;"
+>
+    <div class="container-fluid">
+        <div class="row borders">
+            <ul class="nav nav-pills hidden-sm-down col-md-12 ">
+                <div class="row">
+                    <li class="poi-nav-item col-md-2 col-md-push-10 text-right" style="display: flex; vertical-align: middle; margin: 0 4rem; display: flex; vertical-align: middle; margin: 0 4rem; padding: .75rem 0;">
+                            <a href="http://instagram.com/personsofinterestbarbershop/"><i class="fa fa-camera-retro fa-2x"></i></a>
+                            <span class="text-uppercase" style="padding-left: 1rem; margin-top: .25rem;">Follow Us</span>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
     <script>
+
+//        if ( window.innerWidth > 767 ){
+//            $('#side-menu').removeClass('hidden')
+//        }
 
         $('#logo').on('click', function(){
             location.reload();

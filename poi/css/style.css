@@ -1,8 +1,3 @@
-#logo {
-    text-decoration: none;
-    color: inherit
-}
-
 @font-face
 {
     font-family: Futura;
@@ -16,192 +11,226 @@
 
 /* Extra Small devices (767px and below) */
 @media (max-width: 767px) {
+    .jumbotron
+    {
+        background: white;
+        padding: 2rem 1rem 0rem 1rem;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
     .jumbotron h1 {
         font-size: 3em;
     }
+    .subtitle {
+        margin-top: -0.6em;
+    }
+    .sub-menu
+    {
+        margin: 1rem 0rem 0rem 0rem;
+        padding: 1rem 0;
+        border-top: 1px solid black;
+    }
+    .abs-hero
+    {
+        position: absolute;
+        width: 100%;
+        background-image: url('../images/poi-mural-mobile.jpg');
+        background-size: cover;
+        background-position-y: 10rem;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .hidden {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    #side-menu {
+     padding-top: 4rem;
+    }
+    #side-menu, .shop-menu, #locations-menu {
+        height: 100vh;
+    }
+
+    #side-menu ul {
+        list-style-type: none;
+        padding: 0 1rem;
+    }
+
+    .nav-item, .shop-item, .services-item {
+        font-family: Futura;
+        font-weight: 700;
+        padding: 2.5rem 0 1.5rem 0rem;
+    }
+
+    .services-item {
+        margin: 0 1rem;
+
+    }
+    .shop-item {
+        margin: 0 1rem;
+    }
+
+    .press-item {
+        margin: 0 1rem 0 1rem;
+        font-family: Futura;
+        font-weight: 700;
+        padding: 1.5rem 0 1.5rem 0rem;
+    }
+    .press-item h6 {
+        margin-bottom: 0rem;
+    }
+    .press-item a, .services-item a {
+        color: #373a3c;
+    }
+
+    .services-item h5:nth-child(1) {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .services-item h5:nth-child(2) {
+        float: right;
+    }
+
+    .hood {
+        display: inline-block;
+    }
+
+    .caret {
+        float: right;
+        padding-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    .caret h5 a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .location-tab {
+        text-align: left;
+        list-style-type: none;
+        -webkit-padding-start: 0px;
+    }
+
+    .border {
+        border-top: 1px solid black;
+    }
+
+    a[href^="tel:"]:before {
+        content: "\260E";
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+
+    .vh {
+        height: 100vh;
+    }
+
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .jumbotron h1 {
-        font-size: 6em;
+    .jumbotron
+    {
+        background: white;
+        padding: 1rem 1rem 0rem 1rem;
+        border-radius: 0;
+        margin-bottom: 0;
     }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
     .jumbotron h1 {
-        font-size: 8em;
+        font-size: 3em;
     }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .jumbotron h1 {
-        font-size: 10em;
+    .subtitle {
+        margin-top: -.75em;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    #side-menu ul {
+        list-style-type: none;
+        padding: 0 1rem 0 1rem;
+    }
+    .nav-item {
+        padding: 0 2rem 0 0;
+    }
+    h4 {
+        font-size: 1.15rem;
+    }
+    #side-menu {
+        margin: 2rem 0 0 0;
+        padding: 2rem 0rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .mcaret {
+        margin-right: 2rem;
+    }
+    .borders {
+        margin: 1rem 1rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .nav-pills .nav-link {
+        color:inherit;
+        font-family: inherit;
+        font-weight: 700;
+        padding: .5em 0em;
+    }
+    .poi-nav-item {
+        padding: .75rem;
+    }
+    .background-tablet {
+        background-image: url("../images/poi-mural-full.jpg");
+        height: calc(100vh - 270px);
+        overflow-y: hidden;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
 }
 
 
 /* all styles */
 
+/* title sectrion*/
 h1
 {
     font-family: 'Duke';
 }
-.jumbotron
-{
-    background: white;
-    padding: 2rem 1rem 0rem 1rem;
-    border-radius: 0;
-    margin-bottom: 0;
+h4 {
+    font-weight: 700;
+}
+a i {
+    color: #373a3c;
 }
 .subtitle
 {
     font-family: Futura;
     font-weight: 700;
-    margin-top: -0.6em;
     margin-bottom: 0;
 }
-
-.sub-menu
-{
-    margin: 1rem 0rem 0rem 0rem;
-    padding: 1rem 0;
-    border-top: 1px solid black;
+#logo {
+    text-decoration: none;
+    color: inherit
 }
-.abs-hero
-{
-    position: absolute;
-    width: 100%;
-    background-image: url('../images/poi-mural-mobile.jpg');
-    background-size: cover;
-    background-position-y: 10rem;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-a i {
-    color: #373a3c;
-}
-
-
-.hidden {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-#side-menu, .shop-menu, #locations-menu {
-    height: 100vh;
-}
-
-
-
-#side-menu ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.nav-item, .shop-item, .services-item {
-    font-family: Futura;
-    font-weight: 700;
-    padding: 2.5rem 0 1.5rem 0rem;
-}
-
-.services-item {
-    margin: 0 1rem;
-
-}
-
-.nav-item a, .shop-item a, .services-item a {
-    color: #373a3c;
-}
-
 .nav-item h4:first-child {
     display: inline-block;
 }
-
-.nav-item h4 a, .shop-item h4 a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.shop-item {
-    margin: 0 1rem;
-}
-
-.press-item {
-    margin: 0 1rem 0 1rem;
-    font-family: Futura;
-    font-weight: 700;
-    padding: 1.5rem 0 1.5rem 0rem;
-}
-.press-item h6 {
-    margin-bottom: 0rem;
-}
-.press-item a, .services-item a {
-    color: #373a3c;
-}
-
-.services-item h5:nth-child(1) {
-    display: inline-block;
-    text-align: left;
-}
-
-.services-item h5:nth-child(2) {
-    float: right;
-}
-
-.hood {
-    display: inline-block;
-}
-
 .mcaret {
     float: right;
     padding-left: 3rem;
 }
-
-.caret {
-    float: right;
-    padding-left: 3rem;
-    margin-top: 1rem;
+.nav-item a, .shop-item a, .services-item a {
+    color: #373a3c;
 }
-
-.caret h5 a {
+.nav-item h4 a, .shop-item h4 a {
     cursor: pointer;
     text-decoration: none;
 }
-
-/*h4 .nav-link {*/
-    /*float: left;*/
-/*}*/
-
-/*.right-sub {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    /*background-color: white;*/
-    /*margin: 1rem 0rem 0rem 0rem;*/
-    /*padding: 1rem 0;*/
-/*}*/
-
-.location-tab {
-    text-align: left;
-    list-style-type: none;
-    -webkit-padding-start: 0px;
+.hidden {
+    display: none !important;
 }
 
-.border {
-    border-top: 1px solid black;
-}
 
-a[href^="tel:"]:before {
-    content: "\260E";
-    display: inline-block;
-    margin-right: 0.5em;
-}
 
-.vh {
-    height: 100vh;
-}
