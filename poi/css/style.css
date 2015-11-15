@@ -1,13 +1,31 @@
+
 @font-face
 {
-    font-family: Futura;
-    src: url('../fonts/Futura.ttc');
+font-family: Futura;
+src: url('../fonts/Futura.ttc');
 }
 @font-face
 {
-    font-family: Duke;
-    src: url('../fonts/Duke.otf');
+font-family: Duke;
+src: url('../fonts/Duke.otf');
 }
+@media (max-width: 767px){
+    .hidden-sm-down {
+        display: none;
+    }
+}
+
+/*.FuturaBT-Medium {*/
+    /*font-family: FuturaBT-Medium;*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
+/*.FuturaBT-ExtraBlackCondensed {*/
+    /*font-family: FuturaBT-ExtraBlackCondensed;*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
+
 
 /* Extra Small devices (767px and below) */
 @media (max-width: 767px) {
@@ -290,16 +308,16 @@
     .press-dropdown h6 a, .press-dropdown h6 a:visited, .location-dropdown h5 a,  .location--dropdown h5 a:visited {
         color: inherit;
     }
-    .location-map {
-        padding-left: 0;
-        width: 70%;
-        background-color: white;
-        text-align: right;
-    }
-    .location-map img {
+    /*.location-map {*/
+        /*padding-left: 0;*/
+        /*width: 70%;*/
+        /*height: 1000px;*/
+        /*background-color: white;*/
+        /*text-align: center;*/
+    /*}*/
+    #map {
         height: 67vh;
-        padding: .75rem 0 1rem;
-
+        width: 100%;
     }
 
 }
@@ -348,5 +366,7 @@ a i {
 .poi-nav-item {
     font-family: Futura;
 }
-
+body {
+    font-family: Futura;
+}
 

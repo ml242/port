@@ -9,7 +9,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <!--<link rel="stylesheet" href="./css/MyFontsWebfontsKit.css">-->
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="./js/leaflet-prov.js"></script>
+
+
 </head>
 
 <body>
@@ -92,7 +103,7 @@
                 </div>
 
 
-                <div id="press-menu" class="row hidden" style="padding-top: 4rem;">
+                <div class="row hidden" id="press-menu" style="padding-top: 4rem;">
                     <ul class="location-tab">
                         <li class="press-item border">
                             <h6>
@@ -262,16 +273,17 @@
         <ul class="nav nav-pills hidden-sm-down col-md-12">
             <div class="row">
                 <li class="poi-nav-item col-md-4 dropdown">
-                    <a href="#" class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Locations<span style="display: inline-block; float: right; padding-right: 1.5rem">&nbsp;></span></a>
+                    <a onclick="fixMap()" href="#" class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Locations<span style="display: inline-block; float: right; padding-right: 1.5rem">&nbsp;></span></a>
                     <div class="dropdown-menu" style="background-color: transparent">
-                        <div class="row">
+                        <div class="row" style="background-color: white;">
                             <ul class="dropdown-item col-md-4 location-dropdown">
                                 <li style="text-decoration: none; margin-left: .5rem;"><h6>Williamsburg <span class="pull-right"> > </span></h6></li>
                                 <li style="text-decoration: none;"><h6>Carroll Gardens <span class="pull-right"> > </span></h6></li>
                                 <li style="text-decoration: none; margin-right: 0"><h6>Fort Green <span class="pull-right"> > </span></h6></li>
                             </ul>
-                            <div class="col-md-8 location-map">
-                                <img src="./images/full-map.jpg">
+                            <div class="col-md-8">
+                                <!--<img src="./images/full-map.jpg">-->
+                                <div id="map"></div>
                             </div>
                         </div>
 
@@ -404,16 +416,8 @@
         </div>
     </div>
 </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-
     <script>
 
-//        if ( window.innerWidth > 767 ){
-//            $('#side-menu').removeClass('hidden')
-//        }
 
         $('#logo').on('click', function(){
             location.reload();
@@ -509,5 +513,43 @@
         });
 
     </script>
+
+    <script>
+
+        var map = L.map('map').setView([40.698600472532895, -73.97652626037598], 13);
+
+
+
+        L.tileLayer('http://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+//        L.tileLayer.provider('Thunderforest.Landscape').addTo(map);
+
+
+        var marker1 = L.marker([40.68176, -73.99364]).addTo(map);
+        var marker2 = L.marker([40.68682, -73.97471]).addTo(map);
+        var marker3 = L.marker([40.71378, -73.95635]).addTo(map);
+
+
+        marker3.bindPopup("<b>POI Williamsburg</b><br>88 Havemeyer St, Brooklyn, NY 11211");
+        marker2.bindPopup("<b>POI Fort Green</b><br>88 S Portland Ave, Brooklyn, NY 11217");
+        marker1.bindPopup("<b>POI Carroll Gardens</b><br>299 Smith St, Brooklyn, NY 11231");
+
+
+
+    </script>
+    <script>
+        $('#map').on('click', function(e){
+            e.stopPropagation();
+        })
+
+        function fixMap() {
+            setTimeout(function () {
+                map.invalidateSize()
+            }, 100);
+        }
+    </script>
+
 </body>
 </html>
