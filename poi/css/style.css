@@ -189,7 +189,7 @@ src: url('../fonts/Duke.otf');
         margin-right: 2rem;
     }
     .borders {
-        margin: 1rem 2rem;
+        margin: 1rem;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
     }
@@ -205,8 +205,11 @@ src: url('../fonts/Duke.otf');
     }
     .poi-nav-item {
         padding: .75rem;
-        /*width: 33%;*/
+        padding-right: 2rem;
         display: inline-block;
+    }
+    .poi-nav-item.open > a span{
+        transform: rotate(90deg);
     }
     .background-tablet {
         background-image: url("../images/poi-mural-full.jpg");
@@ -285,14 +288,12 @@ src: url('../fonts/Duke.otf');
         font-weight: 700;
         background-color: white !important;
         width: 33%;
+        padding-left: .5rem;
         padding-right: 2rem;
         height: 67vh;
     }
     .press-dropdown{
         overflow-y: scroll;
-    }
-    .location-dropdown {
-        width: 30% !important;
     }
     .press-dropdown h6{
         border-bottom: black 1px solid;
@@ -301,31 +302,35 @@ src: url('../fonts/Duke.otf');
     .location-dropdown li {
         border-bottom: black 1px solid;
         padding: 3rem 0;
+        line-height: 1.25
     }
-    .location-dropdown li:last-child {
+    .location-dropdown li:last-child, {
         border-bottom: none;
+    }
+    #allview > li {
+        margin-left: .5rem;
     }
     .press-dropdown h6 a, .press-dropdown h6 a:visited, .location-dropdown h5 a,  .location--dropdown h5 a:visited {
         color: inherit;
     }
-    /*.location-map {*/
-        /*padding-left: 0;*/
-        /*width: 70%;*/
-        /*height: 1000px;*/
-        /*background-color: white;*/
-        /*text-align: center;*/
-    /*}*/
     #map {
         height: 67vh;
         width: 100%;
     }
+    .leaflet-container {
+        background: white;
+    }
 
+    /* detail style*/
+    #detail-view ul {
+        padding-left: .5rem;
+    }
 }
 
 
 /* all styles */
 
-/* title sectrion*/
+/* title section*/
 h1
 {
     font-family: 'Duke';
@@ -369,4 +374,3 @@ a i {
 body {
     font-family: Futura;
 }
-
