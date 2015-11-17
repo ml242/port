@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <!--<link rel="stylesheet" href="./css/MyFontsWebfontsKit.css">-->
+    <link rel="stylesheet" href="./css/MyFontsWebfontsKit.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -24,7 +24,6 @@
 
 <body>
 
-<div class="container-flui">
     <div id="header"
         style="top: 0">
     <div class="abs-hero">
@@ -40,70 +39,68 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <div class="hidden" id="side-menu">
+                <div class="hidden" id="side-menu" style="margin-top: 0">
                     <div class="row">
-                        <ul>
+                        <ul class="FuturaBT-ExtraBlackCondensed">
                             <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                <h4>LOCATIONS</h4>
-                                <span id="locations" class="mcaret "><h4><a>&nbsp;></a></h4></span>
+                                <h6>LOCATIONS</h6>
+                                <span id="locations" class="mcaret "><h6><a>&nbsp;></a></h6></span>
                             </li>
                             <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                <h4>SERVICES</h4>
-                                <span id="services" class="mcaret "><h4><a>&nbsp;></a></h4></span>
+                                <h6>SERVICES</h6>
+                                <span id="services" class="mcaret "><h6><a>&nbsp;></a></h6></span>
                             </li>
                             <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                <h4>PRESS</h4>
-                                <span id="press" class="mcaret "><h4><a>&nbsp;></a></h4></span>
+                                <h6>PRESS</h6>
+                                <span id="press" class="mcaret "><h6><a>&nbsp;></a></h6></span>
 
                             </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="hidden" id="locations-menu" style="padding-top: 4rem;">
+                <div class="hidden" id="locations-menu">
 
                     <ul class="location-tab">
                         <li class="nav-item border">
-                            <h5 class="hood">WILLIAMSBURG</h5> <span class="caret williamsburg"><h5><a>&nbsp;></a></h5></span>
-                            <h6><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
+                            <h6 class="hood">WILLIAMSBURG</h6> <span class="caret williamsburg"><h6><a>&nbsp;></a></h6></span>
+                            <h6 class="FuturaBT-Medium"><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
                         </li>
                         <li class="nav-item border">
-                            <h5 class="hood">CARROL GARDENS</h5><span class="caret carrol"><h5><a>&nbsp;></a></h5></span>
-                            <h6><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
+                            <h6 class="hood">CARROL GARDENS</h6><span class="caret carrol"><h6><a>&nbsp;></a></h6></span>
+                            <h6 class="FuturaBT-Medium"><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
                         </li>
                         <li class="nav-item border">
-                            <h5 class="hood">FORT GREENE</h5><span class="caret fort"><h5><a>&nbsp;></a></h5></span>
-                            <h6><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
+                            <h6 class="hood">FORT GREENE</h6><span class="caret fort"><h6><a>&nbsp;></a></h6></span>
+                            <h6 class="FuturaBT-Medium"><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
                         </li>
                     </ul>
 
                 </div>
 
-                <div class="row hidden" id="services-menu" style="padding-top: 4rem;">
+                <div class="row hidden" id="services-menu">
                     <ul class="location-tab">
                         <li class="services-item border">
-                            <h5>Haircut:</h5><h5>$45</h5>
+                            <h6>Haircut:</h6><h6>$45</h6>
                         </li>
                         <li class="services-item border">
-                            <h5>Buzz:</h5><h5>$30</h5>
+                            <h6>Buzz:</h6><h6>$30</h6>
                         </li>
                         <li class="services-item border">
-                            <h5>Beard Trim:</h5><h5>$18</h5>
+                            <h6>Beard Trim:</h6><h6>$18</h6>
                         </li>
                         <li class="services-item border">
-                            <h5>Straight Razor Shave:</h5><h5>$50</h5>
+                            <h6>Straight Razor Shave:</h6><h6>$50</h6>
                         </li>
                         <li class="services-item border">
-                            <h5>Haircut and Shave Combo:</h5><h5>$85</h5>
+                            <h6>Haircut and Shave Combo:</h6><h6>$85</h6>
                         </li>
                         <li class="services-item border">
-                            <h5>Cleanup:</h5><h5>$25</h5>
+                            <h6>Cleanup:</h6><h6>$25</h6>
                         </li>
                     </ul>
                 </div>
-
-
-                <div class="row hidden" id="press-menu" style="padding-top: 4rem;">
+                <div class="row hidden" id="press-menu" style="margin-top: 1rem;">
                     <ul class="location-tab">
                         <li class="press-item border">
                             <h6>
@@ -191,84 +188,73 @@
                         </li>
                     </ul>
                 </div>
-
-
                 <div class="row">
-                    <div id="shop-details-williamsburg" class="hidden vh" style="padding-top: 4rem;">
-
-                            <ul class="location-tab">
-                                <li class="shop-item border">
-                                    <h4>WILLIAMSBURG</h4>
-                                    <h5>82 Havemeyer St, Brooklyn, NY 11211</h5>
-                                    <h5>personsofinterestwburg@gmail.com</h5>
-                                    <h5><a href="tel:+(718) 218-9100">(718) 218-9100</a></h5>
-                                </li>
-                                <li class="shop-item border">
-                                    <h5>Monday - Friday: 1pm - 9pm</h5>
-                                    <h5>Saturday - Sunday: 11am - 7pm</h5>
-                                    <h5>Bedford/Lorimer (L), Metropolitan (G)</h5>
-                                    <h5>( SEE MAP/LOCAL SPOTS )</h5>
-                                </li>
-                                <li class="shop-item border">
-                                    <h4><a href="http://parlorcoffee.com" _target="blank">PARLOR COFFEE</a></h4>
-                                    <h5>Espresso Bar at POI Williamsburg</h5>
-                                    <h5>Monday - Sunday: 10am - 4pm</h5>
-                                </li>
-                            </ul>
-
+                    <div id="shop-details-williamsburg" class="hidden vh">
+                        <ul class="location-tab FuturaBT-Medium">
+                            <li class="shop-item border">
+                                <h6 class="FuturaBT-ExtraBlackCondensed">WILLIAMSBURG</h6>
+                                <h6>82 Havemeyer St, Brooklyn, NY 11211</h6>
+                                <h6>personsofinterestwburg@gmail.com</h6>
+                                <h6><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
+                            </li>
+                            <li class="shop-item border">
+                                <h6>Monday - Friday: 1pm - 9pm</h6>
+                                <h6>Saturday - Sunday: 11am - 7pm</h6>
+                                <h6>Bedford/Lorimer (L), Metropolitan (G)</h6>
+                                <h6>( SEE MAP/LOCAL SPOTS )</h6>
+                            </li>
+                            <li class="shop-item border">
+                                <h6><a class="FuturaBT-ExtraBlackCondensed" href="http://parlorcoffee.com" _target="blank">PARLOR COFFEE</a></h6>
+                                <h6>Espresso Bar at POI Williamsburg</h6>
+                                <h6>Monday - Sunday: 10am - 4pm</h6>
+                            </li>
+                        </ul>
                     </div>
                     <div id="shop-details-carrol" class="hidden vh">
-                        <div class="right-sub" style="padding-top: 4rem;">
-                            <ul class="location-tab">
-
-                                <li class="shop-item border">
-                                    <h4>CARROL GARDENS</h4>
-                                    <h5>299 Smith St, Brooklyn, NY 11231</h5>
-                                    <h5>personsofinterestbklyn@gmail.com</h5>
-                                    <h5><a href="tel:+(718) 858-5300">(718) 858-5300</a></h5>
-                                </li>
-                                <li class="shop-item border">
-                                    <h5>Monday - Friday: 12pm - 8pm</h5>
-                                    <h5>Saturday - Sunday: 10am - 7pm</h5>
-                                    <h5>Carroll Street, (F, G)</h5>
-                                    <h5>( SEE MAP/LOCAL SPOTS )</h5>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="location-tab FuturaBT-Medium">
+                            <li class="shop-item border">
+                                <h6 class="FuturaBT-ExtraBlackCondensed">CARROL GARDENS</h6>
+                                <h6>299 Smith St, Brooklyn, NY 11231</h6>
+                                <h6>personsofinterestbklyn@gmail.com</h6>
+                                <h6><a href="tel:+(718) 858-5300">(718) 858-5300</a></h6>
+                            </li>
+                            <li class="shop-item border">
+                                <h6>Monday - Friday: 12pm - 8pm</h6>
+                                <h6>Saturday - Sunday: 10am - 7pm</h6>
+                                <h6>Carroll Street, (F, G)</h6>
+                                <h6>( SEE MAP/LOCAL SPOTS )</h6>
+                            </li>
+                        </ul>
                     </div>
                     <div id="shop-details-fort" class="hidden vh">
-                        <div class="right-sub" style="padding-top: 4rem;">
-                            <ul class="location-tab">
-
-                                <li class="shop-item border">
-                                    <h4>FORT GREENE</h4>
-                                    <h5>88 S. Portland St, Brooklyn, NY 11217</h5>
-                                    <h5>tk@gmail.com</h5>
-                                    <h5><a href="tel:+(718) 875-2800">(718) 875-2800</a></h5>
-                                </li>
-                                <li class="shop-item border">
-                                    <h5>Monday - Friday: </h5>
-                                    <h5>Saturday - Sunday:</h5>
-                                    <h5>Train to Lafayette, (C)</h5>
-                                    <h5>Train to Fulton, (G)</h5>
-                                    <h5>( SEE MAP/LOCAL SPOTS )</h5>
-                                </li>
-                                <li class="shop-item border">
-                                    <h4>SIDEMAN RECORDS</h4>
-                                    <h5>Record shop at POI Fort Greene</h5>
-                                    <h5>tk@gmail.com</h5>
-                                    <h5>tk.com</h5>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="location-tab FuturaBT-Medium">
+                            <li class="shop-item border">
+                                <h6 class="FuturaBT-ExtraBlackCondensed">FORT GREENE</h6>
+                                <h6>88 S. Portland St, Brooklyn, NY 11217</h6>
+                                <h6>tk@gmail.com</h6>
+                                <h6><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
+                            </li>
+                            <li class="shop-item border">
+                                <h6>Monday - Friday: </h6>
+                                <h6>Saturday - Sunday:</h6>
+                                <h6>Train to Lafayette, (C)</h6>
+                                <h6>Train to Fulton, (G)</h6>
+                                <h6>( SEE MAP/LOCAL SPOTS )</h6>
+                            </li>
+                            <li class="shop-item border">
+                                <h6 class="FuturaBT-ExtraBlackCondensed">SIDEMAN RECORDS</h6>
+                                <h6>Record shop at POI Fort Greene</h6>
+                                <h6>tk@gmail.com</h6>
+                                <h6>tk.com</h6>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+
+
 <div class="container-fluid">
     <div class="row borders">
         <ul class="nav nav-pills hidden-sm-down col-md-12">
@@ -278,16 +264,16 @@
                     <div class="dropdown-menu" style="background-color: transparent">
                         <div class="row" style="background-color: white; height: 100vh">
                             <ul id="allview" class="dropdown-item col-md-4 location-dropdown">
-                                <li id="poi-burg" style="text-decoration: none; margin-left: .5rem;"><h6>Williamsburg <span class="pull-right"> > </span></h6>
+                                <li id="poi-burg" style="text-decoration: none; margin-left: .5rem;"><h6><span class="FuturaBT-ExtraBlackCondensed">Williamsburg</span> <span class="pull-right"> > </span></h6>
                                 </li>
-                                <li id="poi-gard" style="text-decoration: none;"><h6>Carroll Gardens <span class="pull-right"> > </span></h6></li>
-                                <li id="poi-green" style="text-decoration: none; margin-right: 0; border-bottom: none;"><h6>Fort Green <span class="pull-right"> > </span></h6></li>
+                                <li id="poi-gard" style="text-decoration: none;"><h6><span class="FuturaBT-ExtraBlackCondensed">Carroll Gardens</span> <span class="pull-right"> > </span></h6></li>
+                                <li id="poi-green" style="text-decoration: none; margin-right: 0; border-bottom: none;"><h6><span class="FuturaBT-ExtraBlackCondensed">Fort Green</span> <span class="pull-right"> > </span></h6></li>
                             </ul>
                             <ul id="detail-view" class="hidden dropdown-item col-md-4 location-dropdown" style="background-color: transparent">
                                 <ul id="poi-burg-detail" class="hidden">
                                     <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                         <h6>
-                                            <p>Williamsburg <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                            <p><span class="FuturaBT-ExtraBlackCondensed">Williamsburg</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
                                             (718) 218 9100<br />
                                             82 Havemeyer Street,<br />
                                             Brooklyn, New York 11211<br />
@@ -305,7 +291,7 @@
                                     <li style="text-decoration: none; padding: 1rem 0 1rem; border-bottom: none;">
                                         <h6>
                                             <p>
-                                                PARLOR COFFEE<br />
+                                                <span class="FuturaBT-ExtraBlackCondensed">PARLOR COFFEE</span><br />
                                                 Espresso Bar at POI Williamsburg<br />
                                                 Monday - Sunday: 10am - 4pm <br />
                                                 parlorcoffee.com
@@ -316,7 +302,7 @@
                                 <ul id="poi-gard-detail" class="hidden" style="text-decoration: none;">
                                     <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                         <h6>
-                                            <p>CARROLL GARDENS <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                            <p><span class="FuturaBT-ExtraBlackCondensed">CARROLL GARDENS</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
                                                 (718) 858-5300<br />
                                                 299 Smith Street,<br />
                                                 Brooklyn, New York 11231<br />
@@ -336,7 +322,7 @@
                                 <ul id="poi-green-detail" class="hidden" style="text-decoration: none; margin-right: 0">
                                     <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                         <h6>
-                                            <p>Fort Green <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                            <p><span class="FuturaBT-ExtraBlackCondensed">Fort Green</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
                                                 (718) 875-2800<br />
                                                 88 S. Portland Street,<br />
                                                 Brooklyn, New York 11217<br />
@@ -354,7 +340,7 @@
                                     <li style="text-decoration: none; padding: 1rem 0 1rem; border-bottom: none;">
                                         <h6>
                                             <p>
-                                                SIDEMAN RECORDS<br />
+                                                <span class="FuturaBT-ExtraBlackCondensed">SIDEMAN RECORDS</span><br />
                                                 Vinyl Records<br />
                                                 Monday - Sunday: 10am - 4pm <br />
                                                 tk.com
@@ -372,7 +358,7 @@
                 </li>
                 <li class="poi-nav-item col-md-4 dropdown">
                     <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services<span style="display: inline-block; float: right; padding-right: .5rem">&nbsp;></span></a>
-                    <div class="dropdown-menu services-list">
+                    <div class="dropdown-menu services-list FuturaBT-Medium text-uppercase">
                         <div class="row">
                             <ul class="dropdown-item ">
                                 <li class="col-md-4">
@@ -490,9 +476,9 @@
     <div class="container-fluid">
         <div class="row border-top">
             <ul class="hidden-sm-down col-md-12" style="padding-right:0">
-                <li class="pull-right" style="display: inline-flex; padding-top: 0.75rem; padding-right: 0;">
+                <li class="pull-right" style="display: inline-flex; padding-top: 0.75rem; padding-right: 0; text-decoration: none;">
                         <a href="http://instagram.com/personsofinterestbarbershop/"><i class="fa fa-camera-retro fa-2x"></i></a>
-                        <span class="text-uppercase" style="padding-left: 1rem; margin-top: .25rem;"><h6>Follow Us</h6></span>
+                        <span class="text-uppercase" style="padding-left: 1rem; margin-top: .25rem;"><h6 style=" margin-top: .5rem">Follow Us</h6></span>
                 </li>
             </ul>
         </div>
