@@ -34,6 +34,9 @@ src: url('../fonts/Duke.otf');
 
 /* Extra Small devices (767px and below) */
 @media (max-width: 767px) {
+    h6 {
+        font-size: .85rem;
+    }
     .jumbotron
     {
         background: white;
