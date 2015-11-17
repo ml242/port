@@ -285,6 +285,7 @@ src: url('../fonts/Duke.otf');
         float: right;
     }
     .press-dropdown, .location-dropdown  {
+        letter-spacing: 1px;
         text-transform: uppercase;
         font-family: FuturaBT-Medium;
         font-weight: 700;
@@ -389,4 +390,6 @@ body {
 }
 p {
     line-height: 1.25;
+    letter-spacing: 1px;
+    
 }
