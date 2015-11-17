@@ -9,11 +9,14 @@
     font-family: FuturaBT-Medium;
     font-weight: normal;
     font-style: normal;
+    letter-spacing: 1px;
 }
 .FuturaBT-ExtraBlackCondensed {
+    letter-spacing: 1px;
     font-family: FuturaBT-ExtraBlackCondensed !important;
     font-weight: normal;
     font-style: normal;
+    color: #393939;
 }
 
 
@@ -196,10 +199,11 @@ src: url('../fonts/Duke.otf');
         border-top: 1px solid black;
     }
     .nav-pills .nav-link {
-        color:inherit;
+        color: #393939;
         font-family: inherit;
         font-weight: 700;
         padding: .5em 0em;
+        letter-spacing: 1px;
     }
     .poi-nav-item {
         padding: .75rem;
@@ -351,6 +355,8 @@ a i {
     font-family: FuturaBT-ExtraBlackCondensed;
     font-weight: 100;
     margin-bottom: 0;
+    letter-spacing: 1px;
+    color: #393939;
 }
 #logo {
     text-decoration: none;
@@ -380,4 +386,7 @@ a i {
 }
 body {
     font-family: FuturaBT-Medium, Helvetica;
+}
+p {
+    line-height: 1.25;
 }
