@@ -80,8 +80,7 @@ src: url('../fonts/Duke.otf');
     }
 
     .nav-item, .shop-item, .services-item {
-        /*font-family: FuturaBT-ExtraBlackCondensed;*/
-        /*font-weight: 700;*/
+        letter-spacing: 1px;
         padding: 2.5rem 0 1.5rem 0rem;
     }
 
@@ -391,5 +390,5 @@ body {
 p {
     line-height: 1.25;
     letter-spacing: 1px;
-    
+
 }
