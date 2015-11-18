@@ -11,9 +11,9 @@
     font-style: normal;
     letter-spacing: 1px;
 }
-.FuturaBT-ExtraBlackCondensed {
+.FuturaBT-BoldCondensed {
     letter-spacing: 1px;
-    font-family: FuturaBT-ExtraBlackCondensed !important;
+    font-family: FuturaBT-BoldCondensed !important;
     font-weight: normal;
     font-style: normal;
     color: #393939;
@@ -152,7 +152,30 @@ src: url('../fonts/Duke.otf');
         height: 100vh;
         margin-top: 1rem;
     }
+    #wb-map-close {
+        /*height: 67vh;*/
+        width: 100%;
+    }
+    .leaflet-container {
+        background: white;
+    }
 
+}
+
+@media (max-width: 1160px) {
+    .press-dropdown h6 a {
+        font-size: 1.1vw;
+    }
+}
+@media (max-width: 1000px) {
+    .services-list .dropdown-item .col-md-4 h6 {
+        font-size: 1.1vw;
+    }
+}
+@media (max-width: 1050px) {
+    .location-dropdown h6 p{
+        font-size: 1.1vw;
+    }
 }
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -293,8 +316,8 @@ src: url('../fonts/Duke.otf');
         font-weight: 700;
         background-color: white !important;
         width: 33%;
-        padding-left: .5rem;
-        padding-right: 2rem;
+        /*padding-left: .5rem;*/
+        /*padding-right: 2rem;*/
         height: 67vh;
         cursor: pointer;
     }
@@ -355,7 +378,7 @@ a i {
 }
 .subtitle
 {
-    font-family: FuturaBT-ExtraBlackCondensed;
+    font-family: FuturaBT-BoldCondensed;
     font-weight: 100;
     margin-bottom: 0;
     letter-spacing: 1px;
@@ -383,7 +406,7 @@ a i {
     display: none !important;
 }
 .poi-nav-item {
-    font-family: FuturaBT-ExtraBlackCondensed, Helvetica Neue, Helvetica, Arial;
+    font-family: FuturaBT-BoldCondensed, Helvetica Neue, Helvetica, Arial;
     font-weight: 100;
     font-size: .9rem;
 }
@@ -393,5 +416,5 @@ body {
 p {
     line-height: 1.25;
     letter-spacing: 1px;
-
+    overflow-x: scroll;
 }

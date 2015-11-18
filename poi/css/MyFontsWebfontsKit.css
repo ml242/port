@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3125846, 2015-11-15T13:24:58-0500
+ * MyFonts Webfont Build ID 3127661, 2015-11-18T10:47:16-0500
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -11,11 +11,11 @@
  * Webfont: FuturaBT-Medium by Bitstream
  * URL: http://www.myfonts.com/fonts/bitstream/futura/medium/
  * 
- * Webfont: FuturaBT-ExtraBlackCondensed by Bitstream
- * URL: http://www.myfonts.com/fonts/bitstream/futura/condensed-extra-black/
+ * Webfont: FuturaBT-BoldCondensed by Bitstream
+ * URL: http://www.myfonts.com/fonts/bitstream/futura/bold-condensed/
  * 
  * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3125846
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3127661
  * Licensed pageviews: 10,000
  * Webfonts copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.
  * 
@@ -24,11 +24,11 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/2fb256");
+@import url("//hello.myfonts.net/count/2fb96d");
 
   
-@font-face {font-family: 'FuturaBT-Medium';src: url('webfonts/2FB256_0_0.eot');src: url('webfonts/2FB256_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FB256_0_0.woff2') format('woff2'),url('webfonts/2FB256_0_0.woff') format('woff'),url('webfonts/2FB256_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-Medium';src: url('webfonts/2FB96D_0_0.eot');src: url('webfonts/2FB96D_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FB96D_0_0.woff2') format('woff2'),url('webfonts/2FB96D_0_0.woff') format('woff'),url('webfonts/2FB96D_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'FuturaBT-ExtraBlackCondensed';src: url('webfonts/2FB256_1_0.eot');src: url('webfonts/2FB256_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FB256_1_0.woff2') format('woff2'),url('webfonts/2FB256_1_0.woff') format('woff'),url('webfonts/2FB256_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBT-BoldCondensed';src: url('webfonts/2FB96D_1_0.eot');src: url('webfonts/2FB96D_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2FB96D_1_0.woff2') format('woff2'),url('webfonts/2FB96D_1_0.woff') format('woff'),url('webfonts/2FB96D_1_0.ttf') format('truetype');}
  
