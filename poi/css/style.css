@@ -316,10 +316,11 @@ src: url('../fonts/Duke.otf');
         font-weight: 700;
         background-color: white !important;
         width: 33%;
-        /*padding-left: .5rem;*/
-        /*padding-right: 2rem;*/
         height: 67vh;
         cursor: pointer;
+    }
+    .location-dropdown{
+        padding-right: 2rem;
     }
     .press-dropdown{
         overflow-y: scroll;
