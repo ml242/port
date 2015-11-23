@@ -236,14 +236,10 @@
         transform: rotate(90deg);
     }
     .background-tablet {
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
+        background: url("../images/poi-mural-full.jpg") 0 0 / cover;
         height: calc(100vh - 270px);
-        -webkit-height: -webkit-calc(100vh - 270px);
-        background-image: url("../images/poi-mural-full.jpg");
+        -webkit-height: calc(100vh - 270px);
         overflow-y: hidden;
-        z-index: -1;
     }
     .nav li.dropdown {
         position: static;
