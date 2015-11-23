@@ -421,3 +421,6 @@ p {
 #footer ul li {
     text-decoration: none !important;
 }
+#footer li {
+    list-style-type: none;
+}
