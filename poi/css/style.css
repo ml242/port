@@ -1,10 +1,3 @@
-
-/*@font-face*/
-/*{*/
-/*font-family: Futura;*/
-/*src: url('../fonts/Futura.ttc');*/
-/*}*/
-
 .FuturaBT-Medium {
     font-family: FuturaBT-Medium;
     font-weight: normal;
@@ -22,8 +15,8 @@
 
 @font-face
 {
-font-family: Duke;
-src: url('../fonts/Duke.otf');
+    font-family: Duke;
+    src: url('../fonts/Duke.otf');
 }
 
 @media (max-width: 767px){
@@ -70,6 +63,8 @@ src: url('../fonts/Duke.otf');
     .hidden {
         display: none;
         opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transition: opacity 0.5s;
         transition: opacity 0.5s;
     }
     #side-menu, .shop-menu, #locations-menu {
@@ -236,20 +231,21 @@ src: url('../fonts/Duke.otf');
         display: inline-block;
     }
     .poi-nav-item.open > a span{
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
     .background-tablet {
         background-image: url("../images/poi-mural-full.jpg");
         height: calc(100vh - 270px);
         overflow-y: hidden;
-        -webkit-background-size: cover;
         background-size: cover;
     }
     .nav li.dropdown {
         position: static;
     }
     /*.nav li.dropdown.open {*/
-        /*position: static;*/
+    /*position: static;*/
     /*}*/
     .nav li.dropdown.open .dropdown-menu {
         border-radius: 0;
@@ -394,6 +390,7 @@ a i {
 }
 .mcaret {
     float: right;
+    padding-left: 48px;
     padding-left: 3rem;
 }
 .nav-item a, .shop-item a, .services-item a {
@@ -409,6 +406,7 @@ a i {
 .poi-nav-item {
     font-family: FuturaBT-BoldCondensed, Helvetica Neue, Helvetica, Arial;
     font-weight: 100;
+    font-size: 14px;
     font-size: .9rem;
 }
 body {
