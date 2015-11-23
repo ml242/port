@@ -194,7 +194,8 @@
                                 <li class="shop-item border">
                                     <h6 class="FuturaBT-BoldCondensed">WILLIAMSBURG</h6>
                                     <h6>82 Havemeyer St, Brooklyn, NY 11211</h6>
-                                    <h6>williamsburg@personsofinterestbklyn.com</h6>
+                                    <h6>
+                                        <a href="mailto:williamsburg@personsofinterestbklyn.com?Subject=Official%20Inquiry" target="_top">Send Mail</a></h6>
                                     <h6><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
                                 </li>
                                 <li class="shop-item border">
@@ -216,7 +217,8 @@
                                 <li class="shop-item border">
                                     <h6 class="FuturaBT-BoldCondensed">CARROL GARDENS</h6>
                                     <h6>299 Smith St, Brooklyn, NY 11231</h6>
-                                    <h6>carrollgrdns@personsofinterestbklyn.com</h6>
+                                    <h6><a href="mailto:carrollgrdns@personsofinterestbklyn.com?Subject=Official%20Inquiry" target="_top">Send Mail</a>
+                                    </h6>
                                     <h6><a href="tel:+(718) 858-5300">(718) 858-5300</a></h6>
                                 </li>
                                 <li class="shop-item border">
@@ -233,7 +235,8 @@
                                 <li class="shop-item border">
                                     <h6 class="FuturaBT-BoldCondensed">FORT GREENE</h6>
                                     <h6>88 S. Portland St, Brooklyn, NY 11217</h6>
-                                    <h6>ftGreene@personsofinterestbklyn.com</h6>
+                                    <h6><a href="mailto:ftGreene@personsofinterestbklyn.com?Subject=Official%20Inquiry" target="_top">Send Mail</a>
+                                    </h6>
                                     <h6><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
                                 </li>
                                 <li class="shop-item border">
@@ -267,10 +270,10 @@
                             <div class="dropdown-menu" style="background-color: transparent">
                                 <div class="row" style="background-color: white; height: 100vh">
                                     <ul id="allview" class="dropdown-item col-md-4 location-dropdown" style="padding-left: .5rem;">
-                                        <li id="poi-burg" style="text-decoration: none; margin-left: .5rem;"><h6><span class="FuturaBT-BoldCondensed">Williamsburg</span> <span class="pull-right"> > </span></h6>
+                                        <li data-zoom="15" data-position="40.71378, -73.95635" id="poi-burg" style="text-decoration: none; margin-left: .5rem;"><h6><span class="FuturaBT-BoldCondensed">Williamsburg</span> <span class="pull-right"> > </span></h6>
                                         </li>
-                                        <li id="poi-gard" style="text-decoration: none;"><h6><span class="FuturaBT-BoldCondensed">Carroll Gardens</span> <span class="pull-right"> > </span></h6></li>
-                                        <li id="poi-green" style="text-decoration: none; margin-right: 0; border-bottom: none;"><h6><span class="FuturaBT-BoldCondensed">Fort Green</span> <span class="pull-right"> > </span></h6></li>
+                                        <li data-zoom="15" data-position="40.68176, -73.99364" id="poi-gard" style="text-decoration: none;"><h6><span class="FuturaBT-BoldCondensed">Carroll Gardens</span> <span class="pull-right"> > </span></h6></li>
+                                        <li data-zoom="15" data-position="40.68682, -73.97471" id="poi-green" style="text-decoration: none; margin-right: 0; border-bottom: none;"><h6><span class="FuturaBT-BoldCondensed">Fort Green</span> <span class="pull-right"> > </span></h6></li>
                                     </ul>
                                     <ul id="detail-view" class="hidden dropdown-item col-md-4 location-dropdown" style="padding-left: .5rem; background-color: transparent">
                                         <ul id="poi-burg-detail" class="hidden">
@@ -280,7 +283,8 @@
                                                         (718) 218 9100<br />
                                                         82 Havemeyer Street,<br />
                                                         Brooklyn, New York 11211<br />
-                                                        williamsburg@personsofinterestbklyn.com</p>
+                                                        <a href="mailto:williamsburg@personsofinterestbklyn.com?Subject=Official%20Inquiry" target="_top">Send Mail</a>
+                                                        </p>
                                                 </h6>
                                             </li>
                                             <li style="text-decoration: none; padding: 1rem 0 1rem;"><h6>
@@ -309,7 +313,7 @@
                                                         (718) 858-5300<br />
                                                         299 Smith Street,<br />
                                                         Brooklyn, New York 11231<br />
-                                                        carrollgrdns@personsofinterestbklyn.com
+                                                        <a href="mailto:carrollgrdns@personsofinterestbklyn.com?Subject=Official%20Inquiry" target="_top">Send Mail</a>
                                                     </p>
                                                 </h6>
                                             </li>
@@ -330,7 +334,7 @@
                                                         (718) 875-2800<br />
                                                         88 S. Portland Street,<br />
                                                         Brooklyn, New York 11217<br />
-                                                        ftGreene@personsofinterestbklyn.com
+                                                        <a href="mailto:ftGreene@personsofinterestbklyn.com?Subject=Official%20Inquiry" target="_top">Send Mail</a>
                                                     </p>
                                                 </h6>
                                             </li>
@@ -355,7 +359,6 @@
                                         </ul>
                                     </ul>
                                     <div class="col-md-8">
-                                        <!--<img src="./images/full-map.jpg">-->
                                         <div id="map"></div>
                                     </div>
                                 </div>
@@ -617,7 +620,22 @@
                 setTimeout(function () {
                     map.invalidateSize()
                 }, 100);
+
+                map.setView([40.698600472532895, -73.97652626037598], 13);
             }
+
+            $('#allview li').on('click', function() {
+                var that = this;
+                var pos = that.getAttribute('data-position');
+                var zoom = that.getAttribute('data-zoom');
+                if (pos && zoom) {
+                    var locat = pos.split(',');
+                    var zoo = parseInt(zoom);
+                    map.setView(locat, zoo, {animation: true});
+                    return false;
+                }
+            });
+
         </script>
 
         <script>
@@ -634,14 +652,6 @@
                 $('#allview').removeClass('hidden')
             })
         </script>
-        <!--<script>-->
-
-            <!--var offTop = $('.background-tablet').offset().top;-->
-            <!--var offBottom = $('#footer').height();-->
-            <!--var tot = $(window).height() - offTop - offBottom;-->
-
-            <!--$('.background-tablet').attr('height', tot)-->
-        <!--</script>-->
     </div>
 </div>
 </body>

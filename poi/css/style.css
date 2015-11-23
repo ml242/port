@@ -347,8 +347,10 @@
         padding-left: .5rem;
         font-family: FuturaBT-Medium !important;
     }
-
-
+    #detail-view ul li a {
+        color: inherit;
+        text-decoration: underline;
+    }
     h6, h6 a {
         font-size: .9rem;
     }
