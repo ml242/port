@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <meta name="robots" content="noindex">
+     <meta name='robots' content='noindex'>
 
 
     <!-- Bootstrap CSS -->
@@ -301,7 +301,7 @@
                                             <li style="text-decoration: none; padding: 1rem 0 1rem; border-bottom: none;">
                                                 <h6>
                                                     <p>
-                                                        <span class="FuturaBT-BoldCondensed">PARLOR COFFEE</span><br />
+                                                        <span class="FuturaBT-BoldCondensed"><a href="http://parlorcoffee.com" _target="blank">PARLOR COFFEE</a></span><br />
                                                         Espresso Bar at POI Williamsburg<br />
                                                         Monday - Sunday: 10am - 4pm <br />
                                                         parlorcoffee.com
@@ -355,7 +355,7 @@
                                                         <span class="FuturaBT-BoldCondensed">SIDEMAN RECORDS</span><br />
                                                         Vinyl Records<br />
                                                         Monday - Sunday: 10am - 4pm <br />
-                                                        tk.com
+                                                        <a class="FuturaBT-BoldCondensed" href="http://tkrecords.com" _target="blank">TK Records</a>
                                                     </p>
                                                 </h6>
                                             </li>
@@ -655,6 +655,20 @@
                 $('#allview').removeClass('hidden')
             })
         </script>
+
+        <script>
+            var times = 0;
+
+            $('.nav-pills .poi-nav-item').on( 'click', function (e){
+                if ($('.nav-pills .poi-nav-item').first().hasClass('open') ){
+                    times +=1;
+                    if ( times % 2 != 0 ) {
+                        e.stopPropagation();
+                    }
+                }
+            });
+        </script>
+
     </div>
 </div>
 </body>
