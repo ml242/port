@@ -46,16 +46,16 @@
                         <div class="row">
                             <ul class="FuturaBT-BoldCondensed">
                                 <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                    <h6>LOCATIONS</h6>
-                                    <span id="locations" class="mcaret "><h6><a>&nbsp;></a></h6></span>
+                                    <span id="locations"><h6>LOCATIONS</h6>
+                                    <span class="mcaret "><h6><a>&nbsp;></a></h6></span></span>
                                 </li>
                                 <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                    <h6>SERVICES</h6>
-                                    <span id="services" class="mcaret "><h6><a>&nbsp;></a></h6></span>
+                                    <span id="services" ><h6>SERVICES</h6>
+                                    <span class="mcaret "><h6><a>&nbsp;></a></h6></span></span>
                                 </li>
                                 <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                    <h6>PRESS</h6>
-                                    <span id="press" class="mcaret "><h6><a>&nbsp;></a></h6></span>
+                                    <span  id="press" > <h6>PRESS</h6>
+                                    <span class="mcaret "><h6><a>&nbsp;></a></h6></span></span>
 
                                 </li>
                             </ul>
@@ -271,12 +271,12 @@
                         <li class="poi-nav-item col-md-4 dropdown">
                             <a onclick="fixMap()" href="#" class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Locations<span style="display: inline-block; float: right;">&nbsp;></span></a>
                             <div class="dropdown-menu" style="background-color: transparent">
-                                <div class="row" style="background-color: white; height: 100vh">
+                                <div class="row" style="background-color: white;">
                                     <ul id="allview" class="dropdown-item col-md-4 location-dropdown" style="padding-left: .5rem;">
                                         <li data-zoom="15" data-position="40.71378, -73.95635" id="poi-burg" style="text-decoration: none; margin-left: .5rem;"><h6><span class="FuturaBT-BoldCondensed">Williamsburg</span> <span class="pull-right"> > </span></h6>
                                         </li>
                                         <li data-zoom="15" data-position="40.68176, -73.99364" id="poi-gard" style="text-decoration: none;"><h6><span class="FuturaBT-BoldCondensed">Carroll Gardens</span> <span class="pull-right"> > </span></h6></li>
-                                        <li data-zoom="15" data-position="40.68682, -73.97471" id="poi-green" style="text-decoration: none; margin-right: 0; border-bottom: none;"><h6><span class="FuturaBT-BoldCondensed">Fort Green</span> <span class="pull-right"> > </span></h6></li>
+                                        <li data-zoom="15" data-position="40.68682, -73.97471" id="poi-green" style="text-decoration: none; margin-right: 0; border-bottom: none;"><h6><span class="FuturaBT-BoldCondensed">Fort Greene</span> <span class="pull-right"> > </span></h6></li>
                                     </ul>
                                     <ul id="detail-view" class="hidden dropdown-item col-md-4 location-dropdown" style="padding-left: .5rem; background-color: transparent">
                                         <ul id="poi-burg-detail" class="hidden">
@@ -333,7 +333,7 @@
                                         <ul id="poi-green-detail" class="hidden" style="text-decoration: none; margin-right: 0">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">Fort Green</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">Fort Greene</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
                                                         (718) 875-2800<br />
                                                         88 S. Portland Street,<br />
                                                         Brooklyn, New York 11217<br />
@@ -608,7 +608,7 @@
             var marker3 = L.marker([40.71378, -73.95635]).addTo(map);
 
             marker3.bindPopup("<b>POI Williamsburg</b><br>88 Havemeyer St, Brooklyn, NY 11211");
-            marker2.bindPopup("<b>POI Fort Green</b><br>88 S Portland Ave, Brooklyn, NY 11217");
+            marker2.bindPopup("<b>POI Fort Greene</b><br>88 S Portland Ave, Brooklyn, NY 11217");
             marker1.bindPopup("<b>POI Carroll Gardens</b><br>299 Smith St, Brooklyn, NY 11231");
 
         </script>
@@ -659,14 +659,27 @@
         <script>
             var times = 0;
 
-            $('.nav-pills .poi-nav-item').on( 'click', function (e){
+            $('.nav-pills .poi-nav-item').first().on( 'click', function (e){
                 if ($('.nav-pills .poi-nav-item').first().hasClass('open') ){
                     times +=1;
-                    if ( times % 2 != 0 ) {
+                    if ( times % 2 == 0 ) {
                         e.stopPropagation();
                     }
                 }
             });
+
+//            $("#detail-view ul li .pull-right").on('click', function(e){
+//                e.stopPropagation()
+//                console.log('hello')
+//
+//                setTimeout(function () {
+//                    $('html').click();
+//                    $('.nav-pills .poi-nav-item').first().addClass('open');
+//                }, 50);
+//
+//
+//            })
+
         </script>
 
     </div>

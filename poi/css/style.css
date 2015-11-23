@@ -81,7 +81,9 @@
         letter-spacing: 1px;
         padding: 2.5rem 0 1.5rem 0rem;
     }
-
+    .nav-item span h6 {
+        cursor: pointer;
+    }
     .services-item {
         margin: 0 1rem;
 
@@ -350,6 +352,7 @@
     #detail-view ul li a {
         color: inherit;
         text-decoration: underline;
+        font-size: inherit;
     }
     h6, h6 a {
         font-size: .9rem;
