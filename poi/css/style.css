@@ -417,3 +417,7 @@ p {
     letter-spacing: 1px;
     overflow-x: scroll;
 }
+
+#footer ul li {
+    text-decoration: none !important;
+}
