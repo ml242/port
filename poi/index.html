@@ -662,23 +662,11 @@
             $('.nav-pills .poi-nav-item').first().on( 'click', function (e){
                 if ($('.nav-pills .poi-nav-item').first().hasClass('open') ){
                     times +=1;
-                    if ( times % 2 == 0 ) {
+                    if ( times % 2 != 0 ) {
                         e.stopPropagation();
                     }
                 }
             });
-
-//            $("#detail-view ul li .pull-right").on('click', function(e){
-//                e.stopPropagation()
-//                console.log('hello')
-//
-//                setTimeout(function () {
-//                    $('html').click();
-//                    $('.nav-pills .poi-nav-item').first().addClass('open');
-//                }, 50);
-//
-//
-//            })
 
         </script>
 
