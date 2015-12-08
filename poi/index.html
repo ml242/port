@@ -712,8 +712,8 @@
                 e.stopPropagation();
                 e.preventDefault()
 
-                $('#detail-view').addClass('hidden')
-                $('#detail-view').children('ul').addClass('hidden');
+                $('#detail-view').addClass('hidden').children('ul').addClass('hidden');
+
                 $('#allview').removeClass('hidden')
                 $('li#poi-green').trigger('click')
             })
@@ -723,20 +723,19 @@
                 e.stopPropagation();
                 e.preventDefault()
 
-                $('#detail-view').addClass('hidden')
-                $('#detail-view').children('ul').addClass('hidden');
-                $('#allview').removeClass('hidden')
+                $('#detail-view').addClass('hidden').children('ul').addClass('hidden');
+
                 $('#poi-gard').trigger('click')
             })
 
-            $('.back-will').on('click', function(e){
+            $('.back-burg').on('click', function(e){
                 debugger;
                 e.stopPropagation();
                 e.preventDefault()
 
-                $('#detail-view').addClass('hidden')
-                $('#detail-view').children('ul').addClass('hidden');
-                $('#allview').removeClass('hidden')
+                $('#detail-view')
+                $('#detail-view').addClass('hidden').children('ul').addClass('hidden');
+
                 $('#poi-burg').trigger('click')
             })
         </script>
