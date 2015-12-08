@@ -298,7 +298,7 @@
                                                 </p>
                                             </h6>
                                             </li>
-                                            <li style="text-decoration: none; padding: 1rem 0 1rem; border-bottom: none;">
+                                            <li style="text-decoration: none; padding: 1rem 0 1rem;">
                                                 <h6>
                                                     <p>
                                                         <span class="FuturaBT-BoldCondensed"><a href="http://parlorcoffee.com" _target="blank">PARLOR COFFEE</a></span><br />
@@ -307,6 +307,13 @@
                                                         parlorcoffee.com
                                                     </p>
                                                 </h6>
+                                            </li>
+                                            <li style="text-decoration: none; padding: 1rem 0 1rem;"><h6>
+                                                <p>
+                                                    POI - Carrol Gardens <br />
+                                                    POI - Fort Green
+                                                </p>
+                                            </h6>
                                             </li>
                                         </ul>
                                         <ul id="poi-gard-detail" class="hidden" style="text-decoration: none;">
@@ -613,9 +620,9 @@
             var marker2 = L.marker([40.68682, -73.97471]).addTo(map);
             var marker3 = L.marker([40.71378, -73.95635]).addTo(map);
 
-            marker3.bindPopup("<b>POI Williamsburg</b><br>88 Havemeyer St, Brooklyn, NY 11211");
-            marker2.bindPopup("<b>POI Fort Greene</b><br>88 S Portland Ave, Brooklyn, NY 11217");
-            marker1.bindPopup("<b>POI Carroll Gardens</b><br>299 Smith St, Brooklyn, NY 11231");
+            marker3.bindPopup("<b class='b-map' style='cursor:pointer'>POI Williamsburg</b><br>88 Havemeyer St, Brooklyn, NY 11211");
+            marker2.bindPopup("<b class='f-map' style='cursor:pointer'>POI Fort Greene</b><br>88 S Portland Ave, Brooklyn, NY 11217");
+            marker1.bindPopup("<b class='c-map' style='cursor:pointer'>POI Carroll Gardens</b><br>299 Smith St, Brooklyn, NY 11231");
 
 
         </script>
@@ -668,11 +675,7 @@
 
             function locationClick(event){
 
-                console.log('working')
-
                 event.preventDefault();
-
-                    debugger;
 
                     var that = $('.poi-nav-item').first();
 
@@ -681,6 +684,23 @@
                     }
 
             }
+        </script>
+
+        <script>
+            $('#map').on('click', '.b-map', function(){
+                  marker3.togglePopup()
+                $('li#poi-burg').click();
+            })
+
+            $('#map').on('click', '.c-map', function(){
+                marker1.togglePopup()
+                $('li#poi-gard').click();
+            })
+
+            $('#map').on('click', '.f-map', function(){
+                marker2.togglePopup();
+                $('li#poi-green').click();
+            })
         </script>
 
     </div>
