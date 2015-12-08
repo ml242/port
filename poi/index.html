@@ -310,8 +310,8 @@
                                             </li>
                                             <li style="text-decoration: none; padding: 1rem 0 1rem;"><h6>
                                                 <p>
-                                                    POI - Carrol Gardens <br />
-                                                    POI - Fort Green
+                                                    <span class="back-gard">POI - Carrol Gardens</span> <br />
+                                                    <span class="back-fort">POI - Fort Greene</span>
                                                 </p>
                                             </h6>
                                             </li>
@@ -327,7 +327,7 @@
                                                     </p>
                                                 </h6>
                                             </li>
-                                            <li style="text-decoration: none; padding: 1rem 0 1rem;  border-bottom: none;"><h6>
+                                            <li style="text-decoration: none; padding: 1rem 0 1rem;"><h6>
                                                 <p>
                                                     Monday - Friday: 12pm - 8pm <br />
                                                     Saturday - Sunday: 10am - 7pm <br />
@@ -335,7 +335,13 @@
                                                 </p>
                                             </h6>
                                             </li>
-
+                                            <li style="text-decoration: none; padding: 1rem 0 1rem;  border-bottom: none;"><h6>
+                                                <p>
+                                                    <span class="back-burg">POI - Williamsburg</span> <br />
+                                                    <span class="back-fort">POI - Fort Greene</span>
+                                                </p>
+                                            </h6>
+                                            </li>
                                         </ul>
                                         <ul id="poi-green-detail" class="hidden" style="text-decoration: none; margin-right: 0">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
@@ -356,7 +362,7 @@
                                                 </p>
                                             </h6>
                                             </li>
-                                            <li style="text-decoration: none; padding: 1rem 0 1rem; border-bottom: none;">
+                                            <li style="text-decoration: none; padding: 1rem 0 1rem;">
                                                 <h6>
                                                     <p>
                                                         <span class="FuturaBT-BoldCondensed">SIDEMAN RECORDS</span><br />
@@ -365,6 +371,13 @@
                                                         <a class="FuturaBT-BoldCondensed" href="http://tkrecords.com" _target="blank">TK Records</a>
                                                     </p>
                                                 </h6>
+                                            </li>
+                                            <li style="text-decoration: none; padding: 1rem 0 1rem;  border-bottom: none;"><h6>
+                                                <p>
+                                                    <span class="back-burg">POI - Williamsburg</span> <br />
+                                                    <span class="back-gard">POI - Carroll Gardens</span>
+                                                </p>
+                                            </h6>
                                             </li>
                                         </ul>
                                     </ul>
@@ -583,7 +596,6 @@
             $(".location-tab .caret.williamsburg").on('click', function(){
 
                 $("#locations-menu").addClass('hidden');
-
                 $("#shop-details-williamsburg").removeClass('hidden')
                 $("#shop-details-williamsburg").animate({opacity: "1"}, {duration: 300, queue: false});
             });
@@ -591,7 +603,6 @@
             $(".location-tab .caret.carrol").on('click', function() {
 
                 $("#locations-menu").addClass('hidden');
-
                 $("#shop-details-carrol").removeClass('hidden')
                 $("#shop-details-carrol").animate({opacity: "1"}, {duration: 300, queue: false});
             });
@@ -599,7 +610,6 @@
             $(".location-tab .caret.fort").on('click', function() {
 
                 $("#locations-menu").addClass('hidden');
-
                 $("#shop-details-fort").removeClass('hidden')
                 $("#shop-details-fort").animate({opacity: "1"}, {duration: 300, queue: false});
             });
@@ -672,17 +682,12 @@
 
         <script>
 
-
             function locationClick(event){
-
                 event.preventDefault();
-
                     var that = $('.poi-nav-item').first();
-
                     if ( that.first().hasClass('open') && !that.children('.dropdown-menu').children('.row').children("#detail-view").hasClass('hidden')  ){
                         event.stopPropagation();
                     }
-
             }
         </script>
 
@@ -700,6 +705,39 @@
             $('#map').on('click', '.f-map', function(){
                 marker2.togglePopup();
                 $('li#poi-green').click();
+            })
+
+            $('.back-fort').on('click', function(e){
+                debugger;
+                e.stopPropagation();
+                e.preventDefault()
+
+                $('#detail-view').addClass('hidden')
+                $('#detail-view').children('ul').addClass('hidden');
+                $('#allview').removeClass('hidden')
+                $('li#poi-green').trigger('click')
+            })
+
+            $('.back-gard').on('click', function(e){
+                debugger;
+                e.stopPropagation();
+                e.preventDefault()
+
+                $('#detail-view').addClass('hidden')
+                $('#detail-view').children('ul').addClass('hidden');
+                $('#allview').removeClass('hidden')
+                $('#poi-gard').trigger('click')
+            })
+
+            $('.back-will').on('click', function(e){
+                debugger;
+                e.stopPropagation();
+                e.preventDefault()
+
+                $('#detail-view').addClass('hidden')
+                $('#detail-view').children('ul').addClass('hidden');
+                $('#allview').removeClass('hidden')
+                $('#poi-burg').trigger('click')
             })
         </script>
 
