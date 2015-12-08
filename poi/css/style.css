@@ -232,11 +232,6 @@
         padding-right: 2rem;
         display: inline-block;
     }
-    .poi-nav-item.open > a span{
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
     .background-tablet {
         background: url("../images/poi-mural-full.jpg") 0 0 / cover;
         height: calc(100vh - 270px);
@@ -327,7 +322,7 @@
         padding: 3rem 0;
         line-height: 1.25
     }
-    .location-dropdown li:last-child, {
+    .location-dropdown li:last-child {
         border-bottom: none;
     }
     #allview > li {
