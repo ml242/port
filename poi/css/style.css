@@ -357,6 +357,13 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1200px){
+    .background-tablet {
+
+        margin-bottom:4em;
+
+    }
+}
 
 /* all styles */
 
