@@ -278,7 +278,7 @@
                     <div class="row">
                         <li class="poi-nav-item col-md-4 dropdown lox">
                             <a onclick=" fixMap(); locationClick(event); event.preventDefault(); " href="#" class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Locations</a>
-                            <div class="dropdown-menu" style="background-color: transparent">
+                            <div class="dropdown-menu mapped-panel" style="background-color: transparent">
                                 <div class="row" style="background-color: white;">
                                     <ul id="allview" class="dropdown-item col-md-4 location-dropdown" style="padding-left: .5rem;">
                                         <li data-zoom="15" data-position="40.71378, -73.95635" id="poi-burg" style="text-decoration: none; margin-left: .5rem;"><h6><span class="FuturaBT-BoldCondensed">Williamsburg</span> <span class="pull-right"> > </span></h6>
@@ -290,7 +290,7 @@
                                         <ul id="poi-burg-detail" class="hidden">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">Williamsburg</span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">Williamsburg</span> <span class="pull-right upmenu" style="transform: rotate(180deg);"> > </span><br>
                                                         (718) 218 9100<br />
                                                         82 Havemeyer Street,<br />
                                                         Brooklyn, New York 11211<br />
@@ -327,7 +327,7 @@
                                         <ul id="poi-gard-detail" class="hidden" style="text-decoration: none;">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">CARROLL GARDENS</span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">CARROLL GARDENS</span> <span class="pull-right upmenu" style="transform: rotate(180deg);"> > </span><br>
                                                         (718) 858-5300<br />
                                                         299 Smith Street,<br />
                                                         Brooklyn, New York 11231<br />
@@ -354,7 +354,7 @@
                                         <ul id="poi-green-detail" class="hidden" style="text-decoration: none; margin-right: 0">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">Fort Greene</span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">Fort Greene</span> <span class="pull-right upmenu" style="transform: rotate(180deg);"> > </span><br>
                                                         (718) 875-2800<br />
                                                         88 S. Portland Street,<br />
                                                         Brooklyn, New York 11217<br />
@@ -744,6 +744,13 @@
                 $('#detail-view').addClass('hidden').children('ul').addClass('hidden');
 
                 $('#poi-burg').trigger('click')
+            })
+
+            $('.upmenu').on('click', function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                $('.poi-nav-item a').first().click()
+                $('.poi-nav-item a').first().click()
             })
 
         </script>

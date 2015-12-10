@@ -238,6 +238,11 @@
         -webkit-height: calc(100vh - 220px);
         overflow-y: hidden;
     }
+    .mapped-panel {
+        height: calc(100vh - 220px);
+        -webkit-height: calc(100vh - 220px);
+        overflow: hidden;
+    }
     .nav li.dropdown {
         position: static;
     }
