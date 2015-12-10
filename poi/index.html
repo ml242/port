@@ -34,8 +34,8 @@
 
             <!--<h1 class="text-center"><a href="#" id="logo">PERSONS OF INTEREST</a></h1>-->
             <!--<h6 class="text-center subtitle">BARBERSHOP</h6>-->
-            <div class="text-center">
-                <img src="./images/POI_desktop_LOGO.png" class="hidden-sm-down" style="max-width: 30%">
+            <div class="text-center biglogo">
+                <img src="./images/POI_desktop_LOGO.png" class="hidden-sm-down " style="max-width: 360px; min-width: 280px">
                 <img src="./images/POI_mobile_LOGO.png" class="hidden-md-up" style="max-width: 260px">
             </div>
 
@@ -274,7 +274,7 @@
 
         <div class="container-fluid">
             <div class="row borders">
-                <ul class="nav nav-pills hidden-sm-down col-md-12">
+                <ul class="nav nav-pills hidden-sm-down col-md-12 headhight">
                     <div class="row">
                         <li class="poi-nav-item col-md-4 dropdown lox">
                             <a onclick=" fixMap(); locationClick(event); event.preventDefault(); " href="#" class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Locations</a>
@@ -290,7 +290,7 @@
                                         <ul id="poi-burg-detail" class="hidden">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">Williamsburg</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">Williamsburg</span><br>
                                                         (718) 218 9100<br />
                                                         82 Havemeyer Street,<br />
                                                         Brooklyn, New York 11211<br />
@@ -327,7 +327,7 @@
                                         <ul id="poi-gard-detail" class="hidden" style="text-decoration: none;">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">CARROLL GARDENS</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">CARROLL GARDENS</span><br>
                                                         (718) 858-5300<br />
                                                         299 Smith Street,<br />
                                                         Brooklyn, New York 11231<br />
@@ -354,7 +354,7 @@
                                         <ul id="poi-green-detail" class="hidden" style="text-decoration: none; margin-right: 0">
                                             <li style="text-decoration: none; padding: 2rem 0 1rem;">
                                                 <h6>
-                                                    <p><span class="FuturaBT-BoldCondensed">Fort Greene</span> <span class="pull-right" style="transform: rotate(180deg);"> > </span><br>
+                                                    <p><span class="FuturaBT-BoldCondensed">Fort Greene</span><br>
                                                         (718) 875-2800<br />
                                                         88 S. Portland Street,<br />
                                                         Brooklyn, New York 11217<br />
@@ -699,6 +699,7 @@
                         event.stopPropagation();
                     }
             }
+
         </script>
 
         <script>
@@ -718,7 +719,6 @@
             })
 
             $('.back-fort').on('click', function(e){
-                debugger;
                 e.stopPropagation();
                 e.preventDefault()
 
@@ -729,7 +729,6 @@
             })
 
             $('.back-gard').on('click', function(e){
-                debugger;
                 e.stopPropagation();
                 e.preventDefault()
 
@@ -739,15 +738,14 @@
             })
 
             $('.back-burg').on('click', function(e){
-                debugger;
                 e.stopPropagation();
                 e.preventDefault()
 
-                $('#detail-view')
                 $('#detail-view').addClass('hidden').children('ul').addClass('hidden');
 
                 $('#poi-burg').trigger('click')
             })
+
         </script>
 
     </div>

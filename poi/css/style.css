@@ -234,8 +234,8 @@
     }
     .background-tablet {
         background: url("../images/poi-mural-full.jpg") 0 0 / cover;
-        height: calc(100vh - 270px);
-        -webkit-height: calc(100vh - 270px);
+        height: calc(100vh - 220px);
+        -webkit-height: calc(100vh - 220px);
         overflow-y: hidden;
     }
     .nav li.dropdown {
@@ -359,12 +359,18 @@
 
 @media (min-width: 769px) and (max-width: 1200px){
     .background-tablet {
-
         margin-bottom:4em;
-
     }
 }
 
+@media (min-width: 768px){
+    .headhight {
+        min-height: 40px;
+    }
+    .biglogo {
+        min-height: 60px;
+    }
+}
 /* all styles */
 
 /* title section*/
