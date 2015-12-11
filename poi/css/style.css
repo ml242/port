@@ -68,7 +68,7 @@
         transition: opacity 0.5s;
     }
     #side-menu, .shop-menu, #locations-menu {
-        height: calc(100vh - 150px);
+        height: 100vh;
         margin-top: 1rem;
     }
 
@@ -79,7 +79,7 @@
 
     .nav-item, .shop-item, .services-item {
         letter-spacing: 1px;
-        padding: 2.5rem 0 1.5rem 0rem;
+        padding: 2.25rem 0 1.25rem 0rem;
     }
     .nav-item span h6 {
         cursor: pointer;
@@ -116,6 +116,7 @@
 
     .hood {
         display: inline-block;
+        cursor: pointer;
     }
 
     .caret {
@@ -140,6 +141,7 @@
     }
 
     a[href^="tel:"]:before {
+        color: inherit;
         content: "\260E";
         display: inline-block;
         margin-right: 0.5em;
@@ -327,6 +329,9 @@
         padding: 3rem 0;
         line-height: 1.25
     }
+    #poi-burg-detail li, #poi-gard-detail li, #poi-green-detail li {
+        border-bottom: none !important;
+    }
     .location-dropdown li:last-child {
         border-bottom: none;
     }
@@ -438,8 +443,9 @@ p {
     list-style-type: none;
 }
 
-.back-will, .back-gard, .back-burg {
+.back-will, .back-gard, .back-burg, .back-fort {
     display: inline-block;
     width: 100%;
     padding-bottom: .5rem;
+    font-family: FuturaBT-BoldCondensed !important;
 }
