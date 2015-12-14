@@ -248,7 +248,7 @@
     .poi-boat {
         max-width: 5%;
         position: relative;
-        margin-top: 14%;
+        margin-top: 16%;
         margin-left: 15%;
         animation: sailBoat 45s 1s forwards,
                    swing 0 forwards;
