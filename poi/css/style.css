@@ -72,11 +72,14 @@
         height: calc(100vh - 120px);
         margin-top: 1rem;
     }
-    .shop-menu, #locations-menu {
+    .shop-menu {
         height: 100vh;
         margin-top: 1rem;
     }
-
+    #locations-menu {
+        height: calc(100vh - 120px);
+        margin-top: 1rem;
+    }
     #side-menu ul {
         list-style-type: none;
         padding: 0 1rem;
@@ -250,7 +253,7 @@
         position: relative;
         margin-top: 16%;
         margin-left: 15%;
-        animation: sailBoat 20s 1s forwards,
+        animation: sailBoat 20s 0s forwards,
                    swing 0 1s forwards;
 
     }
