@@ -170,17 +170,17 @@
 }
 
 @media (max-width: 1160px) {
-    .press-dropdown h6 a {
+    .press-dropdown h6 a, .location-dropdown li h6 span:first-child, .location-dropdown h6 a {
         font-size: 1.1vw;
     }
 }
 @media (max-width: 1000px) {
-    .services-list .dropdown-item .col-md-4 h6 {
+    .services-list .dropdown-item .col-md-4 h6, .location-dropdown li h6 span:first-child, .location-dropdown h6 a {
         font-size: 1.1vw;
     }
 }
 @media (max-width: 1050px) {
-    .location-dropdown h6 p{
+    .location-dropdown h6 p, .location-dropdown li h6 span:first-child, .location-dropdown h6 a {
         font-size: 1.1vw;
     }
 }
@@ -239,8 +239,6 @@
     }
     .poi-nav-item {
         padding: .75rem;
-        padding-right: 2rem;
-        display: inline-block;
     }
     .background-tablet {
         background: url("../images/poi-mural-edited.jpg") 0 0 / cover;
@@ -346,7 +344,21 @@
     .dropdown-item .col-md-4 h6 span {
         float: right;
     }
-    .press-dropdown, .location-dropdown  {
+    .location-dropdown li h6 span:first-child {
+        float: left !important;
+    }
+    .location-dropdown li h6 {
+        border-bottom: none !important;
+        padding: 0 !important;
+    }
+    .location-dropdown li h6 p {
+        overflow: hidden;
+    }
+    .location-dropdown li {
+        text-decoration: none;
+        padding: 1rem 0 1rem;
+    }
+    .location-dropdown{
         letter-spacing: 1px;
         text-transform: uppercase;
         font-family: FuturaBT-Medium;
@@ -356,27 +368,29 @@
         height: 67vh;
         cursor: pointer;
     }
-    .location-dropdown{
-        padding-right: 2rem;
+    .press-dropdown{
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: FuturaBT-Medium;
+        font-weight: 700;
+        background-color: white !important;
+        height: 60vh;
+        cursor: pointer;
+    }
+    .location-map {
+        padding-right: 0;
     }
     .press-dropdown{
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     .press-dropdown h6{
         border-bottom: black 1px solid;
         padding: 1rem 0;
     }
-    .location-dropdown li {
-        border-bottom: black 1px solid;
-        padding: 3rem 0;
-        line-height: 1.25
-    }
     #poi-burg-detail li, #poi-gard-detail li, #poi-green-detail li {
         border-bottom: none !important;
     }
-    .location-dropdown li:last-child {
-        border-bottom: none;
-    }
+
     #allview > li {
         margin-left: .5rem;
     }
@@ -490,4 +504,27 @@ p {
     width: 100%;
     padding-bottom: .5rem;
     font-family: FuturaBT-BoldCondensed !important;
+}
+
+.flexrow {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+}
+.flexrow > * {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .flexrow {
+        flex-direction: row;
+    }
+    .flexrow > * {
+        flex-direction: column;
+        flex: 1 0 0px;
+    }
+    .flexrow > * > * {
+        flex: 1 0 auto;
+    }
 }
