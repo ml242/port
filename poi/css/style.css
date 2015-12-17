@@ -251,7 +251,7 @@
         position: relative;
         margin-top: 16%;
         margin-left: 15%;
-        animation: sailBoat 20s 0s forwards,
+        animation: sailBoat 20s 1s forwards,
                    swing 0 1s forwards;
 
     }
