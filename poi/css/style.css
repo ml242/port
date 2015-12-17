@@ -353,7 +353,7 @@
         font-family: FuturaBT-Medium;
         font-weight: 700;
         background-color: white !important;
-        height: 60vh;
+        height: calc(96vh - 220px);
         cursor: pointer;
     }
     .location-map {
