@@ -238,6 +238,7 @@
     }
     .poi-nav-item {
         padding: .75rem;
+        text-align: center;
     }
     .background-tablet {
         background: url("../images/poi-mural-edited.jpg") 0 0 / cover;
