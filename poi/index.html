@@ -12,7 +12,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <link rel="stylesheet" href="./css/MyFontsWebfontsKit.css">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -20,8 +19,6 @@
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
 
-    <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
 
 </head>
 
@@ -35,7 +32,7 @@
             <!--<h1 class="text-center"><a href="#" id="logo">PERSONS OF INTEREST</a></h1>-->
             <!--<h6 class="text-center subtitle">BARBERSHOP</h6>-->
             <div class="text-center biglogo">
-                <img src="./images/POI_desktop_LOGO.png" class="hidden-sm-down " style="max-width: 360px; min-width: 280px">
+                <img src="./images/POI_desktop_LOGO.png" class="hidden-sm-down " style="max-width: 360px; min-width: 280px" onclick="window.location.reload()">
                 <img src="./images/POI_mobile_LOGO.png" class="hidden-md-up" style="max-width: 260px" onclick="window.location.reload()">
             </div>
 
@@ -288,8 +285,8 @@
                             <li class="poi-nav-item dropdown" id="poi-burg">
                                 <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Williamsburg</a>
                                 <div class="dropdown-menu FuturaBT-Medium text-uppercase">
-                                    <div class="row dropdown-item " style="background-color: transparent">
-                                            <ul id="" class="col-md-4 location-dropdown">
+                                    <div class="row dropdown-item fullscreen" style="background-color: transparent">
+                                            <ul class="col-md-4 location-dropdown">
                                                 <li>
                                                     <h6>
                                                         <p><span class="FuturaBT-BoldCondensed">Williamsburg</span><br>
@@ -324,8 +321,8 @@
                             <li class="poi-nav-item dropdown" id="poi-green">
                                 <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fort Greene</a>
                                 <div class="dropdown-menu FuturaBT-Medium text-uppercase">
-                                    <div class="row dropdown-item " style="background-color: transparent">
-                                        <ul id="" class="col-md-4 location-dropdown">
+                                    <div class="row dropdown-item fullscreen" style="background-color: transparent">
+                                        <ul class="col-md-4 location-dropdown">
                                             <li>
                                                 <h6>
                                                     <p><span class="FuturaBT-BoldCondensed">Fort Greene</span><br>
@@ -360,8 +357,8 @@
                             <li class="poi-nav-item dropdown" id="poi-gard">
                                 <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Carroll Gardens</a>
                                 <div class="dropdown-menu FuturaBT-Medium text-uppercase">
-                                    <div class="row dropdown-item " style="background-color: transparent">
-                                        <ul id="" class="col-md-4 location-dropdown">
+                                    <div class="row dropdown-item fullscreen" style="background-color: transparent">
+                                        <ul class="col-md-4 location-dropdown">
                                             <li>
                                                 <h6>
                                                     <p><span class="FuturaBT-BoldCondensed">Carroll Gardens</span><br>
@@ -390,26 +387,27 @@
                             </li>
                             <li class="poi-nav-item dropdown">
                                 <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                                <div class="dropdown-menu services-list FuturaBT-Medium text-uppercase">
-                                    <div class="row">
-                                        <ul class="dropdown-item ">
-                                            <li class="col-md-4">
-                                                <h6>Haircut:<span style="float: right">$45</span></h6>
-                                            </li>
-                                            <li class=" col-md-4">
-                                                <h6>Buzz:<span style="float: right">$30</span></h6>
-                                            </li>
-                                            <li class=" col-md-4">
-                                                <h6>Beard Trim:<span style="float: right">$18</span></h6>
-                                            </li>
-                                            <li class="col-md-4">
-                                                <h6>Straight Razor Shave:<span style="float: right">$45</span></h6>
-                                            </li>
-                                            <li class=" col-md-4">
-                                                <h6>Haircut and Shave Combo:<span style="float: right">$85</span></h6>
-                                            </li>
-
-                                        </ul>
+                                <div style="background-color: transparent" class="dropdown-menu services-list FuturaBT-Medium text-uppercase">
+                                    <div class="row dropdown-item services-dropdown" style="background-color: transparent;margin-left: 0rem">
+                                        <div style="background-color: transparent" class="col-md-push-8 col-md-4">
+                                            <ul style="background-color: white; width: 100%; padding: 1rem; margin: 0rem 1rem">
+                                                <li>
+                                                    <h6>Haircut:<span style="float: right">$45</span></h6>
+                                                </li>
+                                                <li>
+                                                    <h6>Buzz:<span style="float: right">$30</span></h6>
+                                                </li>
+                                                <li>
+                                                    <h6>Beard Trim:<span style="float: right">$18</span></h6>
+                                                </li>
+                                                <li>
+                                                    <h6>Straight Razor Shave:<span style="float: right">$45</span></h6>
+                                                </li>
+                                                <li>
+                                                    <h6>Haircut and Shave Combo:<span style="float: right">$85</span></h6>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -511,9 +509,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <!--<div class="container-fluid">-->
             <!--<div class="row border-top hidden-sm-down">-->
                 <!--&lt;!&ndash; INSTANSIVE WIDGET &ndash;&gt;<script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/ed3f129a306451c1891cb066ec0ef29c448a75e4.html" id="instansive_ed3f129a30" name="instansive_ed3f129a30"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>-->
@@ -647,13 +642,6 @@
 
                 $('#poi-burg a:first').trigger('click')
             });
-
-            <!--$('.upmenu').on('click', function(e){-->
-                <!--e.stopPropagation();-->
-                <!--e.preventDefault();-->
-                <!--$('.poi-nav-item a').first().click()-->
-                <!--$('.poi-nav-item a').first().click()-->
-            <!--})-->
 
         </script>
 
