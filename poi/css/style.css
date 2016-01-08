@@ -168,18 +168,13 @@
 
 }
 
-@media (max-width: 1160px) {
-    .press-dropdown h6 a, .location-dropdown li h6 span:first-child, .location-dropdown h6 a {
-        font-size: 1.1vw;
-    }
-}
 @media (max-width: 1000px) {
-    .services-list .dropdown-item .col-md-4 h6, .location-dropdown li h6 span:first-child, .location-dropdown h6 a {
+    .services-list .dropdown-item .col-md-4 h6, .location-dropdown li h6 {
         font-size: 1.1vw;
     }
 }
 @media (max-width: 1050px) {
-    .location-dropdown h6 p, .location-dropdown li h6 span:first-child, .location-dropdown h6 a {
+    .location-dropdown li h6  {
         font-size: 1.1vw;
     }
 }
@@ -349,7 +344,6 @@
     }
     .location-dropdown{
         letter-spacing: 1px;
-        text-transform: uppercase;
         font-family: FuturaBT-Medium;
         font-weight: 700;
         background-color: white !important;
