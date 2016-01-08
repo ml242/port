@@ -46,7 +46,7 @@
     {
         margin: 1rem 0rem 0rem 0rem;
         padding: 1rem 0;
-        border-top: 1px solid black;
+        border-top: 1px solid #373a3c;
     }
     .abs-hero
     {
@@ -144,7 +144,7 @@
     }
 
     .border {
-        border-top: 1px solid black;
+        border-top: 1px solid #373a3c;
     }
 
     a[href^="tel:"]:before {
@@ -214,20 +214,20 @@
     #side-menu {
         margin: 2rem 0 0 0;
         padding: 2rem 0rem;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 1px solid #373a3c;
+        border-bottom: 1px solid #373a3c;
     }
     .mcaret {
         margin-right: 2rem;
     }
     .borders {
         margin: 1rem;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 1px solid #373a3c;
+        border-bottom: 1px solid #373a3c;
     }
     .border-top {
         margin: 1rem 1rem 0rem;
-        border-top: 1px solid black;
+        border-top: 1px solid #373a3c;
     }
     .nav-pills .nav-link {
         color: #393939;
@@ -318,24 +318,34 @@
     }
     .dropdown-item .col-md-4 h6 {
         display: block;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #373a3c;
     }
     .dropdown-item .col-md-4 h6 span {
         float: right;
+    }
+    .fullscreen {
+        width: 100%;
+    }
+    .location-dropdown {
+        padding: 3px 20px;
     }
     .location-dropdown li h6 span:first-child {
         float: left !important;
     }
     .location-dropdown li h6 {
-        border-bottom: none !important;
         padding: 0 !important;
-    }
-    .location-dropdown li h6 p {
-        overflow: hidden;
+        line-height: 1rem;
     }
     .location-dropdown li {
         text-decoration: none;
-        padding: 1rem 0 1rem;
+        padding: .75rem 0 0;
+        border-bottom: 1px solid #373a3c;
+    }
+    .location-dropdown li:last-child {
+        border: none;
+    }
+    .location-dropdown li a {
+        color: #373a3c;
     }
     .location-dropdown{
         letter-spacing: 1px;
@@ -363,7 +373,7 @@
         overflow-y: auto;
     }
     .press-dropdown h6{
-        border-bottom: black 1px solid;
+        border-bottom: #373a3c 1px solid;
         padding: 1rem 0;
     }
     #poi-burg-detail li, #poi-gard-detail li, #poi-green-detail li {
@@ -479,9 +489,9 @@ p {
 }
 
 .back-will, .back-gard, .back-burg, .back-fort {
-    display: inline-block;
+    display: block;
     width: 100%;
-    padding-bottom: .5rem;
+    line-height: 1rem;
     font-family: FuturaBT-BoldCondensed !important;
 }
 
