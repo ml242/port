@@ -52,10 +52,10 @@
     {
         position: absolute;
         width: 100%;
-        background-image: url('../images/poi-mural-mobile.jpg');
+        background-image: url('../images/flatiron-mobile.jpg');
         background-size: cover;
-        background-position-y: 8rem;
-        background-position-x: -11rem;
+/*        background-position-y: 8rem;
+        background-position-x: -11rem;*/
         background-repeat: no-repeat;
         height: 100vh;
     }
