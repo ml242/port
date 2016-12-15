@@ -245,12 +245,12 @@
         text-align: center;
     }
     .background-tablet {
-        background: url("../images/poi-mural-edited.jpg") 0 0 / cover;
+        background: url("../images/flatiron.jpg") 0 80% / cover;
         height: calc(100vh - 220px);
         -webkit-height: calc(100vh - 220px);
         overflow-y: hidden;
     }
-    .poi-boat {
+/*    .poi-boat {
         max-width: 5%;
         position: relative;
         margin-top: 16%;
@@ -258,8 +258,8 @@
         animation: sailBoat 25s 2s forwards,
                    swing 0 2s forwards;
 
-    }
-    @keyframes sailBoat {
+    }*/
+/*    @keyframes sailBoat {
         from {
             max-width: 5%;
             margin-left: 15%;
@@ -283,7 +283,7 @@
         58% {transform: rotate(0deg);}
         64% {transform: rotate(-2deg);}
         72% {transform: rotate(0deg);}
-    }
+    }*/
     .mapped-panel {
         height: calc(100vh - 220px);
         -webkit-height: calc(100vh - 220px);
