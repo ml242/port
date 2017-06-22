@@ -491,7 +491,7 @@ p {
     list-style-type: none;
 }
 
-.back-will, .back-gard, .back-burg, .back-fort {
+.back-will, .back-gard, .back-burg, .back-fort, .back-tod {
     display: block;
     width: 100%;
     line-height: 1rem;

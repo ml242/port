@@ -12,17 +12,13 @@
           content="Persons of Interest is a barbershop in Brooklyn serving clients in Williamsburg, Fort Greene, and Carroll Gardens. Walk in or book an appointment online today.">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"> -->
+
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="./css/font-awesome.css">
     <link rel="stylesheet" href="./css/MyFontsWebfontsKit.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
     <script src="./js/jquery.js"></script>
-
-    <!--<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script> -->
     <script src="./js/bootstrap.js"></script>
 
     <!--Google anayltics-->
@@ -61,9 +57,6 @@
      style="top: 0">
     <div class="abs-hero">
         <div class="jumbotron">
-
-            <!--<h1 class="text-center"><a href="#" id="logo">PERSONS OF INTEREST</a></h1>-->
-            <!--<h6 class="text-center subtitle">BARBERSHOP</h6>-->
             <div class="text-center biglogo">
                 <img alt="Persons of Interest Brooklyn Barbershop logo" src="./images/POI_desktop_LOGO.png"
                      class="hidden-sm-down " style="max-width: 360px; min-width: 280px"
@@ -82,6 +75,7 @@
                 <a href="http://instagram.com/personsofinterestbarbershop/"><i class="fa fa-camera-retro fa-2x"></i></a>
             </div>
 
+            <!-- MOBILE MENU -->
             <div class="row hidden-md-up">
                 <div class="col-xs-12">
                     <div class="hidden" id="side-menu" style="margin-top: 0">
@@ -108,10 +102,6 @@
                                     <span id="press"> <h6>PRESS</h6>
                                     <span class="mcaret "><h6><a>&nbsp;></a></h6></span></span>
                                 </li>
-                                <li class="nav-item sub-menu col-xs-12 col-md-4">
-                                    <span id="manhattan"> <h6>MANHATTAN: Now Open</h6>
-                                    <span class="mcaret "><h6><a>&nbsp;></a></h6></span></span>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -131,7 +121,6 @@
                                 <h6 class="hood carrol">CARROLL GARDENS</h6><span class="caret carrol"><h6><a>
                                 &nbsp;></a></h6></span>
                                 <h6 class="FuturaBT-Medium"><a href="tel:+(718) 858-5300">(718) 858-5300</a></h6>
-                                <!--<h6 class="text-uppercase"><a target="_blank" href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "><i class="fa fa-calendar"></I>Book Online</a></h6>-->
                                 <h6 class="text-uppercase"><a target="_blank"
                                                               href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
                                     Online</a></h6>
@@ -143,10 +132,17 @@
                                 <h6 class="text-uppercase"><a target="_blank"
                                                               href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
                                     Online</a></h6>
-
+                            </li>
+                            <li class="nav-item border">
+                                <!-- TODO FIX NUMBER -->
+                                <h6 class="hood tod">POI x The Space</h6><span class="caret space"><h6><a>&nbsp;></a>
+                            </h6></span>
+                                <h6 class="FuturaBT-Medium"><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
+                                <h6 class="text-uppercase"><a target="_blank"
+                                                              href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                    Online</a></h6>
                             </li>
                         </ul>
-
                     </div>
 
                     <div class="row hidden" id="services-menu">
@@ -168,6 +164,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="row hidden" id="press-menu" style="margin-top: 1rem;">
                         <ul class="location-tab press-links">
                             <li class="press-item border">
@@ -306,7 +303,7 @@
                         </ul>
                     </div>
 
-
+                    <!-- MOBILE PAGES -->
                     <div class="row">
                         <div id="shop-details-williamsburg" class="hidden vh">
                             <ul class="location-tab FuturaBT-Medium">
@@ -330,11 +327,11 @@
                                     <h6>Bedford/Lorimer (L), Metropolitan (G)</h6>
                                 </li>
                                 <li class="shop-item border">
-                                    <h6><a class="FuturaBT-BoldCondensed" href="http://parlorcoffee.com"
-                                           _target="blank">PARLOR COFFEE</a></h6>
-                                    <h6>Espresso Bar at POI Williamsburg</h6>
-                                    <h6>Monday - Friday: 12pm - 6pm </h6>
-                                    <h6>Saturday - Sunday: 11am - 5pm </h6>
+                                    <h6 class="FuturaBT-BoldCondensed">TōKU Tea</h6>
+                                    <h6>Japanese Tea Stand</h6>
+                                    <h6>Monday - Friday: 8am - 4pm</h6>
+                                    <h6>Saturday - Sunday: 9am - 5pm</h6>
+                                    <a href="https://www.tokutea.com/" target="_blank"><h6>www.tokutea.com</h6></a>
                                 </li>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.162199757868!2d-73.9582095862871!3d40.71444571349414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2595f01351743%3A0x35d9e5661fd4ccb6!2s82+Havemeyer+St%2C+Brooklyn%2C+NY+11211!5e0!3m2!1sen!2sus!4v1452204106724"
                                         width="100%" height="450" frameborder="0" style="border:0"
@@ -402,6 +399,42 @@
                                         allowfullscreen></iframe>
                             </ul>
                         </div>
+
+                        <div id="shop-details-space" class="hidden vh">
+                            <ul class="location-tab FuturaBT-Medium">
+                                <li class="shop-item border">
+                                    <h6 class="FuturaBT-BoldCondensed">POI x The Space</h6>
+                                    <h6> 99 Scott Ave, Brooklyn, NY 11237</h6>
+                                    <h6>
+                                        <a href="mailto:fortgreene@personsofinterestbklyn.com?Subject=Official%20Inquiry"
+                                           target="_top">Email POI x The Space</a>
+                                    </h6>
+                                    <h6><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
+                                    <h6 class="text-uppercase">
+                                        <a target="_blank"
+                                          href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                            Online</a>
+                                    </h6>
+
+                                </li>
+                                <li class="shop-item border">
+                                    <h6>Monday - Friday: 12pm - 8pm</h6>
+                                    <h6>Saturday - Sunday: 11am - 7pm</h6>
+                                </li>
+                                <li class="shop-item border">
+                                    <h6>Train to Jefferson, (L)</h6>
+                                </li>
+                                <li class="shop-item border">
+                                    <h6 class="FuturaBT-BoldCondensed">BROOKLYN TAILORS</h6>
+                                    <h6>Tailoring at POI Fort Greene</h6>
+                                    <h6>Mon - Fri 12-8</h6>
+                                    <h6>Sat - Sun 11-8</h6>
+                                </li>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.886843113966!2d-73.92550125390663!3d40.708254078335514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ea624814bd1%3A0xc6f06f4cee34579f!2s99+Scott+Ave%2C+Brooklyn%2C+NY+11237%2C+USA!5e0!3m2!1sen!2sca!4v1498093367608" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
 
@@ -438,22 +471,23 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    Bedford/Lorimer (L), Metropolitan (L,G)
+                                                    <a href="https://www.tokutea.com/" target="_blank" class="FuturaBT-BoldCondensed">TōKU Tea</a><br />
+                                                    Japanese Tea Stand <br/>
+                                                    Monday - Friday: 8am - 4pm <br/>
+                                                    Saturday - Sunday: 9am - 5pm
                                                 </h6>
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <a href="http://parlorcoffee.com" _target="blank"><span
-                                                            class="FuturaBT-BoldCondensed">PARLOR COFFEE</span></a><br/>
-                                                    Espresso Bar at POI Williamsburg<br/>
-                                                    Monday - Friday: 12pm - 6pm <br/>
-                                                    Saturday - Sunday: 11am - 5pm <br/>
+                                                    Bedford/Lorimer (L), Metropolitan (L,G)
                                                 </h6>
                                             </li>
                                             <li>
                                                 <h6>
                                                     <span class="back-gard">Carroll Gardens</span>
                                                     <span class="back-fort">Fort Greene</span>
+                                                    <span class="back-tod">POI x The Space</span>
+
                                                 </h6>
                                             </li>
                                             <li>
@@ -504,19 +538,18 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <a href="http://www.brooklyn-tailors.com/" _target="blank"
-                                                       class="FuturaBT-BoldCondensed">BROOKLYN TAILORS</a><br/>
+                                                    <a href="http://www.brooklyn-tailors.com/" _target="blank" class="FuturaBT-BoldCondensed">BROOKLYN TAILORS</a><br/>
                                                     Tailoring at POI Fort Greene<br/>
                                                     Monday - Friday: 12pm - 8pm <br/>
                                                     Saturday - Sunday: 11am - 8pm <br/>
-                                                    <a class="FuturaBT-BoldCondensed" href="http://www.brooklyn-tailors.com/"
-                                                       _target="blank">Brooklyn Tailors</a>
                                                 </h6>
                                             </li>
                                             <li>
                                                 <h6>
                                                     <span class="back-burg">Williamsburg</span><br/>
                                                     <span class="back-gard">Carroll Gardens</span>
+                                                    <span class="back-tod">POI x The Space</span>
+
                                                 </h6>
                                             </li>
                                             <li>
@@ -567,6 +600,7 @@
                                                 <h6>
                                                     <span class="back-burg">Williamsburg</span>
                                                     <span class="back-fort">Fort Greene</span>
+                                                    <span class="back-tod">POI x The Space</span>
                                                 </h6>
                                             </li>
                                             <li>
@@ -582,6 +616,55 @@
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.6462422922305!2d-73.9936484!3d40.681762899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a57464e4b23%3A0xcc6f2ed8e736919a!2s299+Smith+St%2C+Brooklyn%2C+NY+11231%2C+USA!5e0!3m2!1sen!2sca!4v1447873532486"
                                                     width="100%" height="450" frameborder="0" style="border:0"
                                                     allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="poi-nav-item dropdown" id="poi-tod">
+                                <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button"
+                                   aria-haspopup="true" aria-expanded="false">POI x The Space NYC</a>
+                                <div class="dropdown-menu FuturaBT-Medium">
+                                    <div class="row fullscreen" style="background-color: transparent">
+                                        <ul class="col-md-4 location-dropdown">
+                                            <li>
+                                                <h6>
+                                                    <span class="FuturaBT-BoldCondensed">POI x The Space NYC</span><br>
+                                                    (718) 858-5300<br/>
+                                                    99 Scott Ave<br/>
+                                                    Brooklyn, New York 11237<br/>
+                                                    <a href="mailto:carrollgardens@personsofinterestbklyn.com?Subject=Official%20Inquiry"
+                                                       target="_top">Email POI x The Space</a>
+                                                </h6>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    Monday - Friday: 12pm - 8pm <br/>
+                                                    Saturday - Sunday: 10am - 7pm
+                                                </h6>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    Jefferson (L)
+                                                </h6>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <span class="back-burg">Williamsburg</span>
+                                                    <span class="back-gard">Carroll Gardens</span>
+                                                    <span class="back-tod">POI x The Space NYC</span>
+                                                </h6>
+                                            </li>
+                                            <li>
+                                                <h6>
+                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
+                                                       target="_blank"
+                                                       href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "
+                                                       role="button">Book Online</a>
+                                                </h6>
+                                            </li>
+                                        </ul>
+                                        <div class="col-md-8 location-map">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.886843113966!2d-73.92550125390663!3d40.708254078335514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ea624814bd1%3A0xc6f06f4cee34579f!2s99+Scott+Ave%2C+Brooklyn%2C+NY+11237%2C+USA!5e0!3m2!1sen!2sca!4v1498093367608" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -752,15 +835,15 @@
                         </li>
 
 
-                        <li class="col-md-4 nav-pills nav-link poi-nav-item dropup"
-                            style="padding-top: 0.75rem; color: #393939; text-decoration: none">
+                        <!--<li class="col-md-4 nav-pills nav-link poi-nav-item dropup"-->
+                            <!--style="padding-top: 0.75rem; color: #393939; text-decoration: none">-->
 
-                            <a href="http://personsofinterestnyc.com/" class="nav-link text-uppercase" target="_blank"
-                               aria-expanded="false" style="color:inherit">Manhattan: Now Open</a>
-                            
-                            
+                            <!--<a href="http://personsofinterestnyc.com/" class="nav-link text-uppercase" target="_blank"-->
+                               <!--aria-expanded="false" style="color:inherit">Manhattan: Now Open</a>-->
+                            <!---->
+                            <!---->
 
-                        </li>
+                        <!--</li>-->
 
                         <li class="pull-right"
                             style="display: inline-flex; display: -webkit-box; padding-top: 0.75rem; padding-right: 0;">
@@ -807,11 +890,12 @@
             $('#side-menu').removeClass('hidden');
 
             if ((!$('#locations-menu').hasClass('hidden'))
-                    || (!$('#press-menu').hasClass('hidden'))
-                    || (!$('#services-menu').hasClass('hidden'))
-                    || (!$('.shop-menu #shop-details-williamsburg').hasClass('hidden'))
-                    || (!$('.shop-menu #shop-details-carrol').hasClass('hidden'))
-                    || (!$('.shop-menu #shop-details-fort').hasClass('hidden'))) {
+            || (!$('#press-menu').hasClass('hidden'))
+            || (!$('#services-menu').hasClass('hidden'))
+            || (!$('.shop-menu #shop-details-williamsburg').hasClass('hidden'))
+            || (!$('.shop-menu #shop-details-carrol').hasClass('hidden'))
+            || (!$('.shop-menu #shop-details-fort').hasClass('hidden')) 
+            || (!$('.shop-menu #shop-details-space').hasClass('hidden'))) {
 
                 $('#locations-menu').addClass('hidden')
                 $('#services-menu').addClass('hidden')
@@ -819,10 +903,12 @@
                 $('.shop-menu #shop-details-williamsburg').addClass('hidden')
                 $('.shop-menu #shop-details-carrol').addClass('hidden')
                 $('.shop-menu #shop-details-fort').addClass('hidden')
+                $('.shop-menu #shop-details-space').addClass('hidden')
 
                 $('#shop-details-carrol').addClass('hidden')
                 $('#shop-details-fort').addClass('hidden')
                 $('#shop-details-williamsburg').addClass('hidden')
+                $('#shop-details-space').addClass('hidden')
 
 
                 if (menuClick == 1) {
@@ -891,6 +977,13 @@
             $("#shop-details-fort").animate({opacity: "1"}, {duration: 300, queue: false});
         });
 
+        $(".location-tab .space").on('click', function () {
+
+            $("#locations-menu").addClass('hidden');
+            $("#shop-details-space").removeClass('hidden')
+            $("#shop-details-space").animate({opacity: "1"}, {duration: 300, queue: false});
+        });
+
     </script>
     <script>
         $('.back-fort').on('click', function (e) {
@@ -913,6 +1006,13 @@
             e.preventDefault()
 
             $('#poi-burg a:first').trigger('click')
+        });
+
+        $('.back-tod').on('click', function (e) {
+            e.stopPropagation();
+            e.preventDefault()
+
+            $('#poi-tod a:first').trigger('click')
         });
 
     </script>
@@ -944,9 +1044,9 @@
         }
 
 
-        $('#manhattan').on('click', function(){
-            window.location.href = "http://www.personsofinterestnyc.com";
-        })
+//        $('#manhattan').on('click', function(){
+//            window.location.href = "http://www.personsofinterestnyc.com";
+//        })
 
     </script>
 
@@ -971,7 +1071,7 @@
 
             var pd = $('.dropdown-item.press-dropdown')
             pd.innerText = JSON.stringify(rows);
-//            console.log(rows)
+
             var list = rows.map(function(row){
                 pd.prepend("<h6><a target='_blank' href='http://" + row['whatshouldthelinkbeexactlyjustthepartstartingafterhttp'] + "'>" + row['whatshouldthetextsayexactlyfortheheadline'] + "</a></h6>");
             })
@@ -996,9 +1096,8 @@
 
             var pdm = $('ul.location-tab.press-links')
             pdm.innerText = JSON.stringify(rows);
-            console.log(rows)
             var list = rows.map(function(row){
-                pdm.prepend("<li class='press-item border'><h6><a target='_blank' href='http://" + row['whatshouldthelinkbeexactlyjustthepartstartingafterhttp'] + "'>" + row['whatshouldthetextsayexactlyfortheheadline'] + "</a></h6></li>");
+                pdm.prepend("<li class='press-item border'><h6><a target='_blank' href='http://" + row['linkafterhttp'] + "'>" + row['shortheadline'] + "</a></h6></li>");
             })
 
         }
@@ -1009,13 +1108,14 @@
                 url: 'https://spreadsheets.google.com/feeds/list/1NbYz0wz0KvySmDNC-1KJZYiYyJnoBuNBvqCqlAIO0Xg/1/public/values?alt=json',
                 success: function(data){
                     desktopLinks(data);
-//                    console.log(data)
                 },
                 error: function(data){
                     console.log(data)
                     console.log(error)
                 }
             });
+
+            https://docs.google.com/spreadsheets/d/1f3NBYIErryCN6xmAIh2tJD8hOgR7suXlTP_oFN73TW8/edit#gid=654650295
 
             $.ajax({
                 url: 'https://spreadsheets.google.com/feeds/list/1f3NBYIErryCN6xmAIh2tJD8hOgR7suXlTP_oFN73TW8/1/public/values?alt=json',
