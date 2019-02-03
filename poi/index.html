@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>Persons of Interest: The Brooklyn Barbershop</title>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -11,6 +10,10 @@
     <meta name="description"
           content="Persons of Interest is a barbershop in Brooklyn serving clients in Williamsburg, Fort Greene, and Carroll Gardens. Walk in or book an appointment online today.">
 
+    <!-- FAVICON   -->
+    
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32">
+
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -18,8 +21,8 @@
     <link rel="stylesheet" href="./css/MyFontsWebfontsKit.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 
     <!--Google anayltics-->
     <script>
@@ -40,11 +43,43 @@
 
     </script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132803816-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132803816-1');
+    </script>
+
     <script>
         if (window.location.host === 'www.personsofinterestbklyn.com' || window.location.host === 'personsofinterestbklyn.com') {
             $('head').append("<meta name='robots' content='index'>")
         }
     </script>
+
+    <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '272426896701818'); 
+         fbq('track', 'PageView');
+         fbq('track', 'AddToWishlist');
+         fbq('track', 'Lead');
+        </script>
+        <noscript>
+         <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=272426896701818&ev=PageView
+        &noscript=1"/>
+        </noscript>
+    <!-- End Facebook Pixel Code -->
 
 </head>
 
@@ -67,17 +102,41 @@
 
             <div class="text-right sub-menu hidden-md-up">
 
-                <a target="_blank" href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking " class=""
+                <a target="_blank" href="https://go.booker.com/#/brand/personsofinterestbrand/locations " class=""
                    style="display: inline-block; float: left; cursor: pointer;"><i class="fa fa-calendar fa-2x"> <span
                         class="FuturaBT-BoldCondensed text-uppercase" style="font-size: .85rem; vertical-align: middle"><h6
                         style="display: inline">Book Online</h6></span></i></a>
                 <a href="#" id="collapseController"><i class="fa fa-bars fa-2x"></i></a> &nbsp;
-                <a href="http://instagram.com/personsofinterestbarbershop/"><i class="fa fa-camera-retro fa-2x"></i></a>
+                <a href="https://instagram.com/personsofinterestbarbershop/"><i class="fa fa-camera-retro fa-2x"></i></a>
             </div>
 
             <!-- MOBILE MENU -->
             <div class="row hidden-md-up">
                 <div class="col-xs-12">
+
+                     <div id="mobile-carousel" class="carousel slide" data-ride="carousel">
+                      <div class="mobile carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="background-tablet">
+                              <img class="d-block w-100 poi-boat" src="./images/poi-mural-mobile.jpg">
+                            </div>
+                        </div>
+
+                      </div>
+                      <a class="carousel-control-prev" href="#mobile-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#mobile-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>                    
+
+
+
+
+
                     <div class="hidden" id="side-menu" style="margin-top: 0">
                         <div class="row">
                             <ul class="FuturaBT-BoldCondensed">
@@ -91,11 +150,11 @@
                                 </li>
                                 <li class="nav-item sub-menu col-xs-12 col-md-4">
                                     <span><a target="_blank"
-                                             href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">
+                                             href="https://go.booker.com/#/brand/personsofinterestbrand/locations">
                                         <h6 class="text-uppercase" style="color: inherit; text-decoration: none">Book
                                             Online</h6></a>
                                     <span class="mcaret "><h6><a target="_blank"
-                                                                 href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">
+                                                                 href="https://go.booker.com/#/brand/personsofinterestbrand/locations ">
                                         &nbsp;></a></h6></span></span>
                                 </li>
                                 <li class="nav-item sub-menu col-xs-12 col-md-4">
@@ -112,34 +171,25 @@
                             <li class="nav-item border">
                                 <h6 class="hood williamsburg">WILLIAMSBURG</h6><span class="caret williamsburg"><h6><a>
                                 &nbsp;></a></h6></span>
-                                <h6 class="FuturaBT-Medium"><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
+                                <h6 class="FuturaBT-Medium"><a href="tel:718-218-9100">(718) 218-9100</a></h6>
                                 <h6 class="text-uppercase"><a target="_blank"
-                                                              href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                                              href="https://go.booker.com/#/brand/personsofinterestbrand/locations">Book
                                     Online</a></h6>
                             </li>
                             <li class="nav-item border">
                                 <h6 class="hood carrol">CARROLL GARDENS</h6><span class="caret carrol"><h6><a>
                                 &nbsp;></a></h6></span>
-                                <h6 class="FuturaBT-Medium"><a href="tel:+(718) 858-5300">(718) 858-5300</a></h6>
+                                <h6 class="FuturaBT-Medium"><a href="tel:718-858-5300">(718) 858-5300</a></h6>
                                 <h6 class="text-uppercase"><a target="_blank"
-                                                              href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                                              href="https://go.booker.com/#/brand/personsofinterestbrand/locations ">Book
                                     Online</a></h6>
                             </li>
                             <li class="nav-item border">
                                 <h6 class="hood fort">FORT GREENE</h6><span class="caret fort"><h6><a>&nbsp;></a>
                             </h6></span>
-                                <h6 class="FuturaBT-Medium"><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
+                                <h6 class="FuturaBT-Medium"><a href="tel:718-875-2800">(718) 875-2800</a></h6>
                                 <h6 class="text-uppercase"><a target="_blank"
-                                                              href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
-                                    Online</a></h6>
-                            </li>
-                            <li class="nav-item border">
-                                <!-- TODO FIX NUMBER -->
-                                <h6 class="hood tod">POI x The Space</h6><span class="caret space"><h6><a>&nbsp;></a>
-                            </h6></span>
-                                <h6 class="FuturaBT-Medium"><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
-                                <h6 class="text-uppercase"><a target="_blank"
-                                                              href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                                              href="https://go.booker.com/#/brand/personsofinterestbrand/locations ">Book
                                     Online</a></h6>
                             </li>
                         </ul>
@@ -147,29 +197,41 @@
 
                     <div class="row hidden" id="services-menu">
                         <ul class="location-tab">
-                            <li class="services-item border">
-                                <h6>Haircut:</h6><h6>$45</h6>
+                            <li class="services-item border" style="text-align: center">
+                                <h6 class="services-info">Taxes included in price</h6>
                             </li>
                             <li class="services-item border">
-                                <h6>Buzz:</h6><h6>$30</h6>
+                                <h6>Haircut:</h6><h6>$50-60</h6>
                             </li>
                             <li class="services-item border">
-                                <h6>Beard Trim:</h6><h6>$18</h6>
+                                <h6>Straight Razor Shave:</h6><h6>$50</h6>
                             </li>
                             <li class="services-item border">
-                                <h6>Straight Razor Shave:</h6><h6>$45</h6>
+                                <h6>Buzz Cut:</h6><h6>$30</h6>
+                            </li>                            
+                            <li class="services-item border">
+                                <h6>Beard Trim:</h6><h6>$20</h6>
                             </li>
                             <li class="services-item border">
-                                <h6>Haircut and Shave Combo:</h6><h6>$84</h6>
+                                <h6>Haircut and Shave Combo:</h6><h6>$90</h6>
+                            </li>
+                            <li class="services-item border">
+                                <h6>Barber/Pixie Cut:</h6><h6>$50</h6>
+                            </li>
+                            <li class="services-item border">
+                                <h6>Longer/One Hour Cut:</h6><h6>$90</h6>
+                            </li>
+                            <li class="services-item border">
+                                <h6>Bang Trim:</h6><h6>$20</h6>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="row hidden" id="press-menu" style="margin-top: 1rem;">
+                    <div class="row hidden" id="press-menu">
                         <ul class="location-tab press-links">
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.nytimes.com/2016/04/08/fashion/mens-style/how-long-should-a-man-go-between-haircuts.html"
+                                    <a href="https://www.nytimes.com/2016/04/08/fashion/mens-style/how-long-should-a-man-go-between-haircuts.html"
                                        target="_blank">
                                         How Long Should a Man Go Between Haircuts?
                                     </a>
@@ -177,7 +239,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.bkmag.com/2016/01/08/captured-tracks-new-side-business-sideman-records-plans-to-stock-the-world-with-used-vinyl/"
+                                    <a href="https://www.bkmag.com/2016/01/08/captured-tracks-new-side-business-sideman-records-plans-to-stock-the-world-with-used-vinyl/"
                                        target="_blank">
                                         Captured Tracks’ New Side Business - BK Mag
                                     </a>
@@ -185,7 +247,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.nytimes.com/interactive/2015/12/02/style/aziz-ansari-master-of-none-10-locations.html"
+                                    <a href="https://www.nytimes.com/interactive/2015/12/02/style/aziz-ansari-master-of-none-10-locations.html"
                                        target="_blank">
                                         Aziz Ansari Walks Us Through 10 ‘Master of None’ Dining Spots - The New York
                                         Times
@@ -194,7 +256,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://mobile.nytimes.com/2015/06/07/fashion/you-want-a-cappuccino-with-that-haircut.html"
+                                    <a href="https://mobile.nytimes.com/2015/06/07/fashion/you-want-a-cappuccino-with-that-haircut.html"
                                        target="_blank">
                                         You Want a Cappuccino With That Haircut? - NYTimes.com
                                     </a>
@@ -202,7 +264,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.revistagq.com/cuidados/cabello/articulos/barberia-old-school-en-nueva-york/18349"
+                                    <a href="https://www.revistagq.com/cuidados/cabello/articulos/barberia-old-school-en-nueva-york/18349"
                                        target="_blank">
                                         GQ Spain
                                     </a>
@@ -210,28 +272,28 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.gq.com/gallery/best-barbershop-bars-drinks#5" target="_blank">
+                                    <a href="https://www.gq.com/gallery/best-barbershop-bars-drinks#5" target="_blank">
                                         The Best Barbershops That Serve Drinks
                                     </a>
                                 </h6>
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://gallivant.com/shop/persons-of-interest/" target="_blank">
+                                    <a href="https://gallivant.com/shop/persons-of-interest/" target="_blank">
                                         Gallivant
                                     </a>
                                 </h6>
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://fiveoclock.harrys.com/post/3/garrett-pike" target="_blank">
+                                    <a href="https://fiveoclock.harrys.com/post/3/garrett-pike" target="_blank">
                                         Five O'clock
                                     </a>
                                 </h6>
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://gothamist.com/2013/05/22/the_10_best_places_to_treat_yoursel.php"
+                                    <a href="https://gothamist.com/2013/05/22/the_10_best_places_to_treat_yoursel.php"
                                        target="_blank">
                                         Gothamist
                                     </a>
@@ -239,7 +301,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://ny.racked.com/archives/2013/02/21/carroll_gardens_barber_shop_persons_of_interest_expands.php"
+                                    <a href="https://ny.racked.com/archives/2013/02/21/carroll_gardens_barber_shop_persons_of_interest_expands.php"
                                        target="_blank">
                                         Racked
                                     </a>
@@ -247,7 +309,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.details.com/style-advice/grooming/201206/best-barbershops-in-the-usa"
+                                    <a href="https://www.details.com/style-advice/grooming/201206/best-barbershops-in-the-usa"
                                        target="_blank">
                                         Details Magazine
                                     </a>
@@ -255,7 +317,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://tmagazine.blogs.nytimes.com/2012/05/09/vain-glorious-the-clean-slate/?ref=t-magazine"
+                                    <a href="https://tmagazine.blogs.nytimes.com/2012/05/09/vain-glorious-the-clean-slate/?ref=t-magazine"
                                        target="_blank">
                                         The NY Times
                                     </a>
@@ -270,7 +332,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://thescoutmag.com/blog/fashion_style/1213/persons_of_interest_williamsburg"
+                                    <a href="https://thescoutmag.com/blog/fashion_style/1213/persons_of_interest_williamsburg"
                                        target="_blank">
                                         Scout Magazine
                                     </a>
@@ -278,7 +340,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.gq.com/style/blogs/the-gq-eye/2012/01/store-openings-persons-of-interest-opens-in-williamsburg.html"
+                                    <a href="https://www.gq.com/style/blogs/the-gq-eye/2012/01/store-openings-persons-of-interest-opens-in-williamsburg.html"
                                        target="_blank">
                                         GQ Magazine
                                     </a>
@@ -286,7 +348,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.nytimes.com/2010/11/25/fashion/25barber.html?ref=fashion"
+                                    <a href="https://www.nytimes.com/2010/11/25/fashion/25barber.html?ref=fashion"
                                        target="_blank">
                                         The NY Times
                                     </a>
@@ -294,7 +356,7 @@
                             </li>
                             <li class="press-item border">
                                 <h6>
-                                    <a href="http://www.villagevoice.com/bestof/2011/award/best-barbershop-3130430/"
+                                    <a href="https://www.villagevoice.com/bestof/2011/award/best-barbershop-3130430/"
                                        target="_blank">
                                         The Village Voice Best of 2011
                                     </a>
@@ -313,26 +375,36 @@
                                     <h6>
                                         <a href="mailto:williamsburg@personsofinterestbklyn.com?Subject=Official%20Inquiry"
                                            target="_top">Email Williamsburg</a></h6>
-                                    <h6><a href="tel:+(718) 218-9100">(718) 218-9100</a></h6>
+                                    <h6><a href="tel:718-218-9100">(718) 218-9100</a></h6>
                                     <h6 class="text-uppercase"><a target="_blank"
-                                                                  href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                                                  href="https://go.booker.com/#/brand/personsofinterestbrand/locations ">Book
                                         Online</a></h6>
 
                                 </li>
                                 <li class="shop-item border">
-                                    <h6>Monday - Friday: 1pm - 9pm</h6>
-                                    <h6>Saturday - Sunday: 11am - 7pm</h6>
+                                    <h6>Monday: 12pm - 9pm</h6>
+                                    <h6>Tuesday: 1pm - 9pm</h6>
+                                    <h6>Wednesday: 12pm - 9pm</h6>
+                                    <h6>Thursday: 1pm - 9pm</h6>
+                                    <h6>Friday: 12pm - 9pm</h6>
+                                    <h6>Saturday: 8am - 7pm</h6>
+                                    <h6>Sunday: 11am - 7pm</h6>
                                 </li>
                                 <li class="shop-item border">
                                     <h6>Bedford/Lorimer (L), Metropolitan (G)</h6>
                                 </li>
                                 <li class="shop-item border">
-                                    <h6 class="FuturaBT-BoldCondensed">TōKU Tea</h6>
-                                    <h6>Japanese Tea Stand</h6>
-                                    <h6>Monday - Friday: 8am - 4pm</h6>
-                                    <h6>Saturday - Sunday: 9am - 5pm</h6>
-                                    <a href="https://www.tokutea.com/" target="_blank"><h6>www.tokutea.com</h6></a>
+                                    <h6 class="FuturaBT-BoldCondensed">Stand Coffee</h6>
+                                    <h6>8am-3pm</h6>
+                                    <a href="https://standcoffeenyc.com" target="_blank">
+                                        <h6>www.standcoffeenyc.com</h6>
+                                    </a>
                                 </li>
+                                <li class="shop-item border">
+                                    <h6>Help us give you the best service possible by observing our <u>cancellation policy</u>: Please contact the shop 5 hours before your appointment and let us know if you need to reschedule.  We are happy to help.  However, no shows or last minute cancellations will be charged a $25 rebooking fee.  
+                                    </h6>
+                                </li>
+
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.162199757868!2d-73.9582095862871!3d40.71444571349414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2595f01351743%3A0x35d9e5661fd4ccb6!2s82+Havemeyer+St%2C+Brooklyn%2C+NY+11211!5e0!3m2!1sen!2sus!4v1452204106724"
                                         width="100%" height="450" frameborder="0" style="border:0"
                                         allowfullscreen></iframe>
@@ -347,17 +419,26 @@
                                         <a href="mailto:carrollgardens@personsofinterestbklyn.com?Subject=Official%20Inquiry"
                                            target="_top">Email Carroll Gardens</a>
                                     </h6>
-                                    <h6><a href="tel:+(718) 858-5300">(718) 858-5300</a></h6>
+                                    <h6><a href="tel:718-858-5300">(718) 858-5300</a></h6>
                                     <h6 class="text-uppercase"><a target="_blank"
-                                                                  href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                                                  href="https://go.booker.com/#/brand/personsofinterestbrand/locations ">Book
                                         Online</a></h6>
                                 </li>
                                 <li class="shop-item border">
-                                    <h6>Monday - Friday: 12pm - 8pm</h6>
-                                    <h6>Saturday - Sunday: 10am - 7pm</h6>
+                                    <h6>Monday: 12pm - 8pm</h6>
+                                    <h6>Tuesday: 12pm - 8pm</h6>
+                                    <h6>Wednesday: 12pm - 8pm</h6>
+                                    <h6>Thursday: 12pm - 8pm</h6>
+                                    <h6>Friday: 9am - 8pm</h6>
+                                    <h6>Saturday: 10am - 7pm</h6>
+                                    <h6>Sunday: 9am - 7pm</h6>
                                 </li>
                                 <li class="shop-item border">
                                     <h6>Carroll Street, (F, G)</h6>
+                                </li>
+                                <li class="shop-item border">
+                                    <h6>Help us give you the best service possible by observing our <u>cancellation policy</u>: Please contact the shop 5 hours before your appointment and let us know if you need to reschedule.  We are happy to help.  However, no shows or last minute cancellations will be charged a $25 rebooking fee.  
+                                    </h6>
                                 </li>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.6462422922305!2d-73.9936484!3d40.681762899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a57464e4b23%3A0xcc6f2ed8e736919a!2s299+Smith+St%2C+Brooklyn%2C+NY+11231%2C+USA!5e0!3m2!1sen!2sca!4v1447873532486"
                                         width="100%" height="450" frameborder="0" style="border:0"
@@ -373,15 +454,20 @@
                                         <a href="mailto:fortgreene@personsofinterestbklyn.com?Subject=Official%20Inquiry"
                                            target="_top">Email Fort Greene</a>
                                     </h6>
-                                    <h6><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
+                                    <h6><a href="tel:718-875-2800">(718) 875-2800</a></h6>
                                     <h6 class="text-uppercase"><a target="_blank"
-                                                                  href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
+                                                                  href="https://go.booker.com/#/brand/personsofinterestbrand/locations ">Book
                                         Online</a></h6>
 
                                 </li>
                                 <li class="shop-item border">
-                                    <h6>Monday - Friday: 12pm - 8pm</h6>
-                                    <h6>Saturday - Sunday: 11am - 7pm</h6>
+                                    <h6>Monday: 12pm - 8pm</h6>
+                                    <h6>Tuesday: 1pm - 8pm</h6>
+                                    <h6>Wednesday: 12pm - 8pm</h6>
+                                    <h6>Thursday: 12pm - 8pm</h6>
+                                    <h6>Friday: 9am - 8pm</h6>
+                                    <h6>Saturday: 11am - 7pm</h6>
+                                    <h6>Sunday: 11am - 7pm</h6>
                                 </li>
                                 <li class="shop-item border">
                                     <h6>Train to Lafayette, (C)</h6>
@@ -392,46 +478,15 @@
                                     <h6>Tailoring at POI Fort Greene</h6>
                                     <h6>Mon - Fri 12-8</h6>
                                     <h6>Sat - Sun 11-8</h6>
-                                    <a href="http://www.brooklyn-tailors.com/" target="_blank"><h6>brooklyn-tailors.com</h6></a>
+                                    <a href="https://www.brooklyn-tailors.com/" target="_blank"><h6>brooklyn-tailors.com</h6></a>
+                                </li>
+                                <li class="shop-item border">
+                                    <h6>Help us give you the best service possible by observing our <u>cancellation policy</u>: Please contact the shop 5 hours before your appointment and let us know if you need to reschedule.  We are happy to help.  However, no shows or last minute cancellations will be charged a $25 rebooking fee.  
+                                    </h6>
                                 </li>
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4166358944153!2d-73.97471949999999!3d40.686820899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bb1aefb4505%3A0xd32fccb5de098eb1!2s88+S+Portland+Ave%2C+Brooklyn%2C+NY+11217%2C+USA!5e0!3m2!1sen!2sca!4v1447873599015"
                                         width="100%" height="450" frameborder="0" style="border:0"
                                         allowfullscreen></iframe>
-                            </ul>
-                        </div>
-
-                        <div id="shop-details-space" class="hidden vh">
-                            <ul class="location-tab FuturaBT-Medium">
-                                <li class="shop-item border">
-                                    <h6 class="FuturaBT-BoldCondensed">POI x The Space</h6>
-                                    <h6> 99 Scott Ave, Brooklyn, NY 11237</h6>
-                                    <h6>
-                                        <a href="mailto:fortgreene@personsofinterestbklyn.com?Subject=Official%20Inquiry"
-                                           target="_top">Email POI x The Space</a>
-                                    </h6>
-                                    <h6><a href="tel:+(718) 875-2800">(718) 875-2800</a></h6>
-                                    <h6 class="text-uppercase">
-                                        <a target="_blank"
-                                          href=" http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking ">Book
-                                            Online</a>
-                                    </h6>
-
-                                </li>
-                                <li class="shop-item border">
-                                    <h6>Monday - Friday: 12pm - 8pm</h6>
-                                    <h6>Saturday - Sunday: 11am - 7pm</h6>
-                                </li>
-                                <li class="shop-item border">
-                                    <h6>Train to Jefferson, (L)</h6>
-                                </li>
-                                <li class="shop-item border">
-                                    <h6 class="FuturaBT-BoldCondensed">BROOKLYN TAILORS</h6>
-                                    <h6>Tailoring at POI Fort Greene</h6>
-                                    <h6>Mon - Fri 12-8</h6>
-                                    <h6>Sat - Sun 11-8</h6>
-                                </li>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.886843113966!2d-73.92550125390663!3d40.708254078335514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ea624814bd1%3A0xc6f06f4cee34579f!2s99+Scott+Ave%2C+Brooklyn%2C+NY+11237%2C+USA!5e0!3m2!1sen!2sca!4v1498093367608" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                </div>
                             </ul>
                         </div>
 
@@ -455,7 +510,7 @@
                                         <ul class="col-md-4 location-dropdown">
                                             <li>
                                                 <h6>
-                                                    <span class="FuturaBT-BoldCondensed">Williamsburg:</span><br>
+                                                    <span class="FuturaBT-BoldCondensed text-uppercase">Williamsburg:</span><br>
                                                     (718) 218 9100<br/>
                                                     82-84 Havemeyer Street,<br/>
                                                     Brooklyn, New York 11211<br/>
@@ -465,16 +520,20 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    Monday - Friday: 1pm - 9pm <br/>
-                                                    Saturday - Sunday: 11am - 7pm
+                                                    Monday: 12pm - 9pm <br/>
+                                                    Tuesday: 1pm - 9pm <br/>
+                                                    Wednesday: 12pm - 9pm <br/>
+                                                    Thursday: 1pm - 9pm <br/>
+                                                    Friday: 12pm - 9pm <br/>
+                                                    Saturday: 8am - 7pm <br/>
+                                                    Sunday: 11am - 7pm
                                                 </h6>
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <a href="https://www.tokutea.com/" target="_blank" class="FuturaBT-BoldCondensed">TōKU Tea</a><br />
-                                                    Japanese Tea Stand <br/>
-                                                    Monday - Friday: 8am - 4pm <br/>
-                                                    Saturday - Sunday: 9am - 5pm
+                                                    <a href="https://standcoffeenyc.com" target="_blank" class="FuturaBT-BoldCondensed text-uppercase">Stand Coffee</a><br />
+                                                    standcoffeenyc.com<br />
+                                                    8am - 3pm
                                                 </h6>
                                             </li>
                                             <li>
@@ -484,20 +543,17 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <span class="back-gard">Carroll Gardens</span>
-                                                    <span class="back-fort">Fort Greene</span>
-                                                    <span class="back-tod">POI x The Space</span>
+
+                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
+                                                       target="_blank"
+                                                       href="https://go.booker.com/#/brand/personsofinterestbrand/locations "
+                                                       role="button">Book Online</a>
 
                                                 </h6>
                                             </li>
                                             <li>
-                                                <h6>
-
-                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
-                                                       target="_blank"
-                                                       href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "
-                                                       role="button">Book Online</a>
-
+                                                <h6 class="cancellation">
+Help us give you the best service possible by observing our <u>cancellation policy</u>: Please contact the shop 5 hours before your appointment and let us know if you need to reschedule.  We are happy to help.  However, no shows or last minute cancellations will be charged a $25 rebooking fee.  
                                                 </h6>
                                             </li>
                                         </ul>
@@ -527,8 +583,13 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    Monday - Friday: 12pm - 8pm <br/>
-                                                    Saturday - Sunday: 11am - 7pm <br/>
+                                                    Monday: 12pm - 8pm <br/>
+                                                    Tuesday: 12pm - 8pm <br/>
+                                                    Wednesday: 12pm - 8pm <br/>
+                                                    Thursday: 12pm - 8pm <br/>
+                                                    Friday: 9am - 8pm <br/>
+                                                    Saturday: 11am - 7pm <br/>
+                                                    Sunday: 11am - 7pm
                                                 </h6>
                                             </li>
                                             <li>
@@ -538,7 +599,7 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <a href="http://www.brooklyn-tailors.com/" _target="blank" class="FuturaBT-BoldCondensed">BROOKLYN TAILORS</a><br/>
+                                                    <a href="https://www.brooklyn-tailors.com/" _target="blank" class="FuturaBT-BoldCondensed">BROOKLYN TAILORS</a><br/>
                                                     Tailoring at POI Fort Greene<br/>
                                                     Monday - Friday: 12pm - 8pm <br/>
                                                     Saturday - Sunday: 11am - 8pm <br/>
@@ -546,18 +607,15 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <span class="back-burg">Williamsburg</span><br/>
-                                                    <span class="back-gard">Carroll Gardens</span>
-                                                    <span class="back-tod">POI x The Space</span>
-
+                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
+                                                       target="_blank"
+                                                       href="https://go.booker.com/#/brand/personsofinterestbrand/locations "
+                                                       role="button">Book Online</a>
                                                 </h6>
                                             </li>
                                             <li>
-                                                <h6>
-                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
-                                                       target="_blank"
-                                                       href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "
-                                                       role="button">Book Online</a>
+                                                <h6 class="cancellation">
+    Help us give you the best service possible by observing our <u>cancellation policy</u>: Please contact the shop 5 hours before your appointment and let us know if you need to reschedule.  We are happy to help.  However, no shows or last minute cancellations will be charged a $25 rebooking fee.  
                                                 </h6>
                                             </li>
                                         </ul>
@@ -587,8 +645,13 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    Monday - Friday: 12pm - 8pm <br/>
-                                                    Saturday - Sunday: 10am - 7pm
+                                                    Monday: 12pm - 8pm<br />
+                                                    Tuesday: 12pm - 8pm<br />
+                                                    Wednesday: 12pm - 8pm<br />
+                                                    Thursday: 12pm - 8pm<br />
+                                                    Friday: 9am - 8pm<br />
+                                                    Saturday: 10am - 7pm<br />
+                                                    Sunday: 9am - 7pm
                                                 </h6>
                                             </li>
                                             <li>
@@ -598,17 +661,15 @@
                                             </li>
                                             <li>
                                                 <h6>
-                                                    <span class="back-burg">Williamsburg</span>
-                                                    <span class="back-fort">Fort Greene</span>
-                                                    <span class="back-tod">POI x The Space</span>
+                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
+                                                       target="_blank"
+                                                       href="https://go.booker.com/#/brand/personsofinterestbrand/locations "
+                                                       role="button">Book Online</a>
                                                 </h6>
                                             </li>
                                             <li>
-                                                <h6>
-                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
-                                                       target="_blank"
-                                                       href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "
-                                                       role="button">Book Online</a>
+                                                <h6 class="cancellation">
+                                                    Help us give you the best service possible by observing our <u>cancellation policy</u>: Please contact the shop 5 hours before your appointment and let us know if you need to reschedule.  We are happy to help.  However, no shows or last minute cancellations will be charged a $25 rebooking fee.  
                                                 </h6>
                                             </li>
                                         </ul>
@@ -620,55 +681,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="poi-nav-item dropdown" id="poi-tod">
-                                <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button"
-                                   aria-haspopup="true" aria-expanded="false">POI x The Space NYC</a>
-                                <div class="dropdown-menu FuturaBT-Medium">
-                                    <div class="row fullscreen" style="background-color: transparent">
-                                        <ul class="col-md-4 location-dropdown">
-                                            <li>
-                                                <h6>
-                                                    <span class="FuturaBT-BoldCondensed">POI x The Space NYC</span><br>
-                                                    (718) 858-5300<br/>
-                                                    99 Scott Ave<br/>
-                                                    Brooklyn, New York 11237<br/>
-                                                    <a href="mailto:carrollgardens@personsofinterestbklyn.com?Subject=Official%20Inquiry"
-                                                       target="_top">Email POI x The Space</a>
-                                                </h6>
-                                            </li>
-                                            <li>
-                                                <h6>
-                                                    Monday - Friday: 12pm - 8pm <br/>
-                                                    Saturday - Sunday: 10am - 7pm
-                                                </h6>
-                                            </li>
-                                            <li>
-                                                <h6>
-                                                    Jefferson (L)
-                                                </h6>
-                                            </li>
-                                            <li>
-                                                <h6>
-                                                    <span class="back-burg">Williamsburg</span>
-                                                    <span class="back-gard">Carroll Gardens</span>
-                                                    <span class="back-tod">POI x The Space NYC</span>
-                                                </h6>
-                                            </li>
-                                            <li>
-                                                <h6>
-                                                    <a class="nav-link text-uppercase FuturaBT-BoldCondensed"
-                                                       target="_blank"
-                                                       href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "
-                                                       role="button">Book Online</a>
-                                                </h6>
-                                            </li>
-                                        </ul>
-                                        <div class="col-md-8 location-map">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6048.886843113966!2d-73.92550125390663!3d40.708254078335514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ea624814bd1%3A0xc6f06f4cee34579f!2s99+Scott+Ave%2C+Brooklyn%2C+NY+11237%2C+USA!5e0!3m2!1sen!2sca!4v1498093367608" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+
                             <li class="poi-nav-item dropdown">
                                 <a class="nav-link text-uppercase" data-toggle="dropdown" href="#" role="button"
                                    aria-haspopup="true" aria-expanded="false">Services</a>
@@ -678,21 +691,35 @@
                                          style="background-color: transparent;margin-left: 0rem">
                                         <div style="background-color: transparent" class="col-md-push-8 col-md-4">
                                             <ul style="background-color: white; width: 100%; padding: 1rem; margin: 0rem 1rem">
-                                                <li>
-                                                    <h6>Haircut:<span style="float: right">$45</span></h6>
+                                                <li style="text-align: center;">
+                                                    <h6>Taxes included in price</h6>
                                                 </li>
                                                 <li>
-                                                    <h6>Buzz:<span style="float: right">$30</span></h6>
+                                                    <h6>Haircut:<span style="float: right">$50-60</span></h6>
+                                                </li>
+                                                  <li>
+                                                    <h6>Straight Razor Shave:<span style="float: right">$50</span></h6>
                                                 </li>
                                                 <li>
-                                                    <h6>Beard Trim:<span style="float: right">$18</span></h6>
+                                                    <h6>Buzz Cut:<span style="float: right">$30</span></h6>
                                                 </li>
                                                 <li>
-                                                    <h6>Straight Razor Shave:<span style="float: right">$45</span></h6>
+                                                    <h6>Beard Trim:<span style="float: right">$20</span></h6>
                                                 </li>
-                                                <li>
-                                                    <h6>Haircut and Shave Combo:<span style="float: right">$84</span>
+                                                 <li>
+                                                    <h6>Haircut and Shave Combo:<span style="float: right">$90</span>
                                                     </h6>
+                                                </li>
+
+                                                <li>
+                                                    <h6>Barber/Pixie Cut:<span style="float: right">$50</span></h6>
+                                                </li>
+
+                                                <li>
+                                                    <h6>Longer/One Hour Cut:<span style="float: right">$90</span></h6>
+                                                </li>
+                                                <li>
+                                                    <h6>Bang Trim:<span style="float: right">$20</span></h6>
                                                 </li>
                                             </ul>
                                         </div>
@@ -701,7 +728,7 @@
                             </li>
                             <li class="poi-nav-item col-md-2">
                                 <a class="nav-link text-uppercase" target="_blank"
-                                   href="http://personsofinterestbarbershop.mylocalsalon.com/OnlineBooking "
+                                   href="https://go.booker.com/#/brand/personsofinterestbrand/locations "
                                    role="button">Book Online</a>
                             </li>
                         </ul>
@@ -712,13 +739,37 @@
 
         <div class="container-fluid">
             <div class="row hidden-sm-down" style="padding: .25rem 2rem;">
-                <div class="background-tablet">
-                    <img class="poi-boat" src="./images/poi-boat.png">
-                </div>
+                    <!-- <img class="poi-boat" src="./images/poi-boat.png"> -->
+
+
+                    <!-- CAROUSEL -->
+
+
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="background-tablet">
+
+                              <img class="d-block w-100 poi-boat" src="./images/poi-boat.png" alt="First slide">
+                            </div>
+                        </div>
+
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
             </div>
         </div>
 
-        <div id="footer" style=" position: absolute; bottom: 0; width: 100%; background-color: white; z-index: 10001">
+        <!-- <div id="footer" style=" position: absolute; bottom: 0; width: 100%; background-color: white; z-index: 10001"> -->
+        <div id="footer" style="position: absolute; bottom: 0; width: 100%; background-color: white;">
             <div class="container-fluid">
                 <div class="row border-top">
                     <ul class="hidden-sm-down col-md-12" style="padding-right:0; padding-left: 0">
@@ -730,72 +781,72 @@
                                 <div class="row">
                                     <ul class="dropdown-item col-md-4 press-dropdown">
                                         <h6>
-                                            <a href="http://www.nytimes.com/2016/04/08/fashion/mens-style/how-long-should-a-man-go-between-haircuts.html"
+                                            <a href="https://www.nytimes.com/2016/04/08/fashion/mens-style/how-long-should-a-man-go-between-haircuts.html"
                                                target="_blank">
                                                 How Long Should a Man Go Between Haircuts?
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.bkmag.com/2016/01/08/captured-tracks-new-side-business-sideman-records-plans-to-stock-the-world-with-used-vinyl/"
+                                            <a href="https://www.bkmag.com/2016/01/08/captured-tracks-new-side-business-sideman-records-plans-to-stock-the-world-with-used-vinyl/"
                                                target="_blank">
                                                 Captured Tracks’ New Side Business - BK Mag
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.nytimes.com/interactive/2015/12/02/style/aziz-ansari-master-of-none-10-locations.html"
+                                            <a href="https://www.nytimes.com/interactive/2015/12/02/style/aziz-ansari-master-of-none-10-locations.html"
                                                target="_blank">
                                                 Aziz Ansari Walks Us Through 10 ‘Master of None’ Dining Spots - The New
                                                 York Times
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://mobile.nytimes.com/2015/06/07/fashion/you-want-a-cappuccino-with-that-haircut.html"
+                                            <a href="https://mobile.nytimes.com/2015/06/07/fashion/you-want-a-cappuccino-with-that-haircut.html"
                                                target="_blank">
                                                 You Want a Cappuccino With That Haircut? - NYTimes.com
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.revistagq.com/cuidados/cabello/articulos/barberia-old-school-en-nueva-york/18349"
+                                            <a href="https://www.revistagq.com/cuidados/cabello/articulos/barberia-old-school-en-nueva-york/18349"
                                                target="_blank">
                                                 GQ Spain
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.gq.com/gallery/best-barbershop-bars-drinks#5"
+                                            <a href="https://www.gq.com/gallery/best-barbershop-bars-drinks#5"
                                                target="_blank">
                                                 The Best Barbershops That Serve Drinks
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://gallivant.com/shop/persons-of-interest/" target="_blank">
+                                            <a href="https://gallivant.com/shop/persons-of-interest/" target="_blank">
                                                 Gallivant
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://fiveoclock.harrys.com/post/3/garrett-pike" target="_blank">
+                                            <a href="https://fiveoclock.harrys.com/post/3/garrett-pike" target="_blank">
                                                 Five O'clock
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://gothamist.com/2013/05/22/the_10_best_places_to_treat_yoursel.php"
+                                            <a href="https://gothamist.com/2013/05/22/the_10_best_places_to_treat_yoursel.php"
                                                target="_blank">
                                                 Gothamist
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://ny.racked.com/archives/2013/02/21/carroll_gardens_barber_shop_persons_of_interest_expands.php"
+                                            <a href="https://ny.racked.com/archives/2013/02/21/carroll_gardens_barber_shop_persons_of_interest_expands.php"
                                                target="_blank">
                                                 Racked
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.details.com/style-advice/grooming/201206/best-barbershops-in-the-usa"
+                                            <a href="https://www.details.com/style-advice/grooming/201206/best-barbershops-in-the-usa"
                                                target="_blank">
                                                 Details Magazine
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://tmagazine.blogs.nytimes.com/2012/05/09/vain-glorious-the-clean-slate/?ref=t-magazine"
+                                            <a href="https://tmagazine.blogs.nytimes.com/2012/05/09/vain-glorious-the-clean-slate/?ref=t-magazine"
                                                target="_blank">
                                                 The NY Times
                                             </a>
@@ -806,25 +857,25 @@
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://thescoutmag.com/blog/fashion_style/1213/persons_of_interest_williamsburg"
+                                            <a href="https://thescoutmag.com/blog/fashion_style/1213/persons_of_interest_williamsburg"
                                                target="_blank">
                                                 Scout Magazine
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.gq.com/style/blogs/the-gq-eye/2012/01/store-openings-persons-of-interest-opens-in-williamsburg.html"
+                                            <a href="https://www.gq.com/style/blogs/the-gq-eye/2012/01/store-openings-persons-of-interest-opens-in-williamsburg.html"
                                                target="_blank">
                                                 GQ Magazine
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.nytimes.com/2010/11/25/fashion/25barber.html?ref=fashion"
+                                            <a href="https://www.nytimes.com/2010/11/25/fashion/25barber.html?ref=fashion"
                                                target="_blank">
                                                 The NY Times
                                             </a>
                                         </h6>
                                         <h6>
-                                            <a href="http://www.villagevoice.com/bestof/2011/award/best-barbershop-3130430/"
+                                            <a href="https://www.villagevoice.com/bestof/2011/award/best-barbershop-3130430/"
                                                target="_blank">
                                                 The Village Voice Best of 2011
                                             </a>
@@ -838,7 +889,7 @@
                         <!--<li class="col-md-4 nav-pills nav-link poi-nav-item dropup"-->
                             <!--style="padding-top: 0.75rem; color: #393939; text-decoration: none">-->
 
-                            <!--<a href="http://personsofinterestnyc.com/" class="nav-link text-uppercase" target="_blank"-->
+                            <!--<a href="https://personsofinterestnyc.com/" class="nav-link text-uppercase" target="_blank"-->
                                <!--aria-expanded="false" style="color:inherit">Manhattan: Now Open</a>-->
                             <!---->
                             <!---->
@@ -848,7 +899,7 @@
                         <li class="pull-right"
                             style="display: inline-flex; display: -webkit-box; padding-top: 0.75rem; padding-right: 0;">
                             <a display=" display: -webkit-box;"
-                               href="http://instagram.com/personsofinterestbarbershop/"><i
+                               href="https://instagram.com/personsofinterestbarbershop/"><i
                                     class="fa fa-camera-retro fa-2x"></i></a>
                             <div class="text-uppercase"
                                  style="display: inline-flex; display: -webkit-box; padding-left: 1rem; margin-top: .25rem; -webkit-margin-top: .5rem;">
@@ -857,8 +908,8 @@
 
                             <div class="text-uppercase"
                                  style="cursor: pointer; display: inline-flex; display: -webkit-box; padding-left: 1rem; margin-top: .25rem; -webkit-margin-top: .5rem;">
-                                <h6 style=" margin-top: .5rem"><span id="pause">mute</span> <span id="play"
-                                                                                                  class="hidden">unmute</span>
+                                <h6 style=" margin-top: .5rem"><span id="pause">mute</span> 
+                                    <span id="play" class="hidden">unmute</span>
                                 </h6></div>
 
                             <!-- <i class="fa fa-pause-circle"></i></div> -->
@@ -871,8 +922,42 @@
 
 
     </div>
+
+<!--     <div class="modal hide fade" id="myModal">
+        <div class="modal-body">
+            <p class="FuturaBT-BoldCondensed">Dear Customer:</p> 
+
+            <p class="FuturaBT-Medium">We hope you are finding the new online booking system more user friendly.</p>
+            <p class="FuturaBT-Medium">Please note: your credit card will only be charged in the event of a last minute cancellation or no show.</p>
+            <p class="FuturaBT-Medium">No funds will be deducted at the time of booking.</p>
+            <p class="FuturaBT-Medium">Thank you</p>
+            <p class="FuturaBT-Medium">POI</p>  
+            <div class="modal-footer">
+                <a id="modalClose" href="#" class="btn">Close</a>    
+            </div>
+        </div>
+    </div> -->
+
+
+    <script type="text/javascript">
+        // $(window).on('load',function(){
+        //     if (Date.now() < 569563502400000) { // Use Date.parse('Oct 1, 2018') to get date
+        //         $('#myModal').modal('show');
+        //     }
+        // });
+
+        // $('#modalClose').on('click', function() {
+        //     $('#myModal').modal('hide');
+        // })
+
+        // setTimeout(function() {
+        //     $('#myModal').modal('hide');
+        // }, 13500) 
+    </script>
+
+
     <script>
-        $('#logo').on('click', function () {
+        $('#logo').on('click', function (){
             location.reload();
         })
     </script>
@@ -885,6 +970,9 @@
 
             menuTime = new Date()
 
+            $('#mobile-carousel').addClass('hidden')
+
+
             $('#side-menu').css({'background-color': "white"})
             $("#side-menu").animate({opacity: "1"}, {duration: 400, queue: false});
             $('#side-menu').removeClass('hidden');
@@ -894,7 +982,7 @@
             || (!$('#services-menu').hasClass('hidden'))
             || (!$('.shop-menu #shop-details-williamsburg').hasClass('hidden'))
             || (!$('.shop-menu #shop-details-carrol').hasClass('hidden'))
-            || (!$('.shop-menu #shop-details-fort').hasClass('hidden')) 
+            || (!$('.shop-menu #shop-details-fort').hasClass('hidden'))
             || (!$('.shop-menu #shop-details-space').hasClass('hidden'))) {
 
                 $('#locations-menu').addClass('hidden')
@@ -915,6 +1003,8 @@
                     console.log('in menu reset')
                     menuClick = 0;
                     $('#side-menu').addClass('hidden')
+                    $('#mobile-carousel').removeClass('hidden')
+
                     return
                 }
                 return menuClick += 1
@@ -1030,7 +1120,6 @@
 
         $('#play').on('click', function () {
 
-
             $.each($('audio'), function () {
                 this.play();
             });
@@ -1043,16 +1132,76 @@
             $('audio').attr('src', '');
         }
 
-
-//        $('#manhattan').on('click', function(){
-//            window.location.href = "http://www.personsofinterestnyc.com";
-//        })
-
     </script>
 
 
     <script>
+        // 
+
+        $('.carousel').carousel({
+          interval: 10000
+        })
+
+
+        <!-- Slider Images-->
+
+
+        function sliderImages(data){
+            var rows = [];
+            var cells = data.feed.entry;
+
+            for (var i = 0; i < cells.length; i++){
+                var rowObj = {};
+                rowObj.title = cells[i].title.$t;
+                var rowCols = cells[i].content.$t.split(',');
+                for (var j = 0; j < rowCols.length; j++){
+                    var keyVal = rowCols[j].split(':');
+                    rowObj[keyVal[0].trim()] = keyVal[1].trim();
+                }
+                rows.push(rowObj);
+            }
+
+            var pd = $('.carousel-inner')
+            pd.innerText = JSON.stringify(rows);
+
+            var list = rows.map(function(row){
+                    pd.prepend(
+                        "<div class='carousel-item'><div class='d-block w-100' style='background: url(https://" 
+                            + row['linkafterhttps'] + ") center center / cover; height: calc(100vh - 220px);'/></div>"
+                    );
+                })
+
+        }        
+
+        function mobileSliderImages(data){
+            var rows = [];
+            var cells = data.feed.entry;
+
+            for (var i = 0; i < cells.length; i++){
+                var rowObj = {};
+                rowObj.title = cells[i].title.$t;
+                var rowCols = cells[i].content.$t.split(',');
+                for (var j = 0; j < rowCols.length; j++){
+                    var keyVal = rowCols[j].split(':');
+                    rowObj[keyVal[0].trim()] = keyVal[1].trim();
+                }
+                rows.push(rowObj);
+            }
+
+            var pd = $('.mobile carousel-inner')
+            pd.innerText = JSON.stringify(rows);
+
+            var list = rows.map(function(row){
+                    pd.prepend(
+                        "<div class='carousel-item'><div class='d-block w-100' style='background: url(https://" 
+                            + row['linkafterhttps'] + ") center center / cover;'/></div>"
+                    );
+                })
+
+        }
+
         <!-- DESKTOP PRESS LINKS-->
+
 
         function desktopLinks(data){
             var rows = [];
@@ -1070,10 +1219,13 @@
             }
 
             var pd = $('.dropdown-item.press-dropdown')
+
+            console.log(rows)
+
             pd.innerText = JSON.stringify(rows);
 
             var list = rows.map(function(row){
-                pd.prepend("<h6><a target='_blank' href='http://" + row['whatshouldthelinkbeexactlyjustthepartstartingafterhttp'] + "'>" + row['whatshouldthetextsayexactlyfortheheadline'] + "</a></h6>");
+                pd.prepend("<h6><a target='_blank' href='https://" + row['whatshouldthelinkbeexactlyjustthepartstartingafterhttp'] + "'>" + row['whatshouldthetextsayexactlyfortheheadline'] + "</a></h6>");
             })
 
         }
@@ -1097,7 +1249,7 @@
             var pdm = $('ul.location-tab.press-links')
             pdm.innerText = JSON.stringify(rows);
             var list = rows.map(function(row){
-                pdm.prepend("<li class='press-item border'><h6><a target='_blank' href='http://" + row['linkafterhttp'] + "'>" + row['shortheadline'] + "</a></h6></li>");
+                pdm.prepend("<li class='press-item border'><h6><a target='_blank' href='https://" + row['linkafterhttp'] + "'>" + row['shortheadline'] + "</a></h6></li>");
             })
 
         }
@@ -1115,7 +1267,7 @@
                 }
             });
 
-            https://docs.google.com/spreadsheets/d/1f3NBYIErryCN6xmAIh2tJD8hOgR7suXlTP_oFN73TW8/edit#gid=654650295
+            // https://docs.google.com/spreadsheets/d/1f3NBYIErryCN6xmAIh2tJD8hOgR7suXlTP_oFN73TW8/edit#gid=654650295
 
             $.ajax({
                 url: 'https://spreadsheets.google.com/feeds/list/1f3NBYIErryCN6xmAIh2tJD8hOgR7suXlTP_oFN73TW8/1/public/values?alt=json',
@@ -1129,9 +1281,36 @@
                 }
             });
 
+
+            // SLIDER IMAGES
+
+            $.ajax({
+                url: 'https://spreadsheets.google.com/feeds/list/1ZHJlIXE6xziFEx0ulhqpUzQ22xcnLloZ0wb3BvbnW48/1/public/values?alt=json',
+                success: function(data){
+                    sliderImages(data);
+                },
+                error: function(data){
+                    console.log(data)
+                    console.log(error)
+                }
+            });
+
+            $.ajax({
+                url: 'https://spreadsheets.google.com/feeds/list/1ZHJlIXE6xziFEx0ulhqpUzQ22xcnLloZ0wb3BvbnW48/1/public/values?alt=json',
+                success: function(data){
+                    mobileSliderImages(data);
+                },
+                error: function(data){
+                    console.log(data)
+                    console.log(error)
+                }
+            });
+
         });
 
     </script>
+
+
 </div>
 </body>
 </html>

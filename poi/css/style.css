@@ -32,7 +32,7 @@
     .jumbotron
     {
         background: white;
-        padding: 2rem 1rem 0rem 1rem;
+        padding: 2rem 1rem 1rem 1rem;
         border-radius: 0;
         margin-bottom: 0;
     }
@@ -44,7 +44,7 @@
     }
     .sub-menu
     {
-        margin: 1rem 0rem 0rem 0rem;
+        margin: 1rem 0rem -1rem 0rem;
         padding: 1rem 0;
         border-top: 1px solid #373a3c;
     }
@@ -52,12 +52,13 @@
     {
         position: absolute;
         width: 100%;
-        background-image: url('../images/poi-mural-mobile.jpg');
-        background-size: cover;
+        height: 100%;
+        /*background-image: url('../images/poi-mural-mobile.jpg');*/
+        /*background-size: cover;
         background-position-y: 8rem;
         background-position-x: -11rem;
-        background-repeat: no-repeat;
-        height: 100vh;
+        background-repeat: no-repeat;*/
+        /*height: calc(100vh-110px);*/
     }
 
     .hidden {
@@ -86,14 +87,20 @@
 
     .nav-item, .shop-item, .services-item {
         letter-spacing: 1px;
-        padding: 2.25rem 0 1.25rem 0rem;
+        padding: 1.25rem 0 1.25rem 0rem;;
     }
     .nav-item span h6 {
         cursor: pointer;
     }
     .services-item {
-        margin: 0 1rem;
-
+        margin: 0 1rem;    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .services-item h6 {
+        margin-top: 0!important;
+        margin-bottom: 0!important;
     }
     .shop-item {
         margin: 0 1rem;
@@ -113,12 +120,15 @@
     }
 
     .services-item h6:nth-child(1) {
-        display: inline-block;
-        text-align: left;
+        width: 80%;
     }
 
     .services-item h6:nth-child(2) {
         float: right;
+    }
+
+    ul li h6.services-info {
+        width: 100% !important;
     }
 
     .hood {
@@ -141,6 +151,7 @@
         text-align: left;
         list-style-type: none;
         -webkit-padding-start: 0px;
+        margin-top: 1rem;
     }
 
     .border {
@@ -318,7 +329,7 @@
     }
     .dropdown-item .col-md-4 h6 {
         display: inline-block;
-        padding: 1rem 0;
+        padding: 1em 0;
     }
     .dropdown-item .col-md-4 h6 {
         display: block;
@@ -518,4 +529,48 @@ p {
     .flexrow > * > * {
         flex: 1 0 auto;
     }
+}
+
+
+/* MODAL */
+
+.modal-header, .modal-footer {
+    border: none !important;
+}
+
+@media (min-width: 600px) {
+    .modal-body {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 599px) {
+    .modal-body {
+        max-width: 80%;
+    }
+}
+
+.modal-body {
+    background: white;
+    margin: 10% auto 0;
+    border: 1px solid #373a3c;
+}
+
+.modal-footer a {
+    color: #373a3c;
+}
+
+
+/*CAROUSEL */
+.carousel-item,
+.carousel-item.active {
+    height: calc(100vh - 220px) !important;
+}
+
+.carousel-indicators { 
+    bottom: -40px;
+}
+
+.mobile.carousel-inner {
+    margin-top: 1em;
 }
