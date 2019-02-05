@@ -5808,8 +5808,8 @@ button.close {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
